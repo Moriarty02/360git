@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="blog-url" content="http://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=401629042&idx=1&sn=678372467eba8f9e5ea46f5b99560034&scene=1&srcid=01254PoagKn5tSDjaTgSXvVb#rd">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>巧用margin/padding的百分比值实现高度自适应（多用于占位，避免闪烁）
+    </title>
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <style type="text/css">
+    .placeholder {
+        position: relative;
+        width: 50%;
+        background-color: red;
+        padding-top: 50%;
+    }
+    
+    img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="placeholder"><img src="http://p7.qhimg.com/d/inn/a0a7ed08/1226img/presents.jpg"></div>
+    <div class="placeholder"><img src="http://p7.qhimg.com/d/inn/a0a7ed08/1226img/presents.jpg"></div>
+    <div class="placeholder"><img src="http://p7.qhimg.com/d/inn/a0a7ed08/1226img/presents.jpg"></div>
+    <div class="placeholder"><img src="http://p7.qhimg.com/d/inn/a0a7ed08/1226img/presents.jpg"></div>
+</body>
+
+</html>

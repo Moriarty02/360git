@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>给子元素/伪元素设置margin/padding撑开容器</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <style type="text/css">
+    .imgcon {
+        position: relative;
+        width: 50%;
+        background-color: tomato;
+        overflow: hidden;
+    }
+    
+    .imgcon:after {
+        content: "";
+        display: block;
+        margin-top: 100%;
+    }
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="imgcon">
+        <img src="http://p7.qhimg.com/d/inn/a0a7ed08/1226img/presents.jpg">
+    </div>
+    <div class="imgcon"><img src="http://p7.qhimg.com/d/inn/a0a7ed08/1226img/presents.jpg"></div>
+    <div class="imgcon"><img src="http://p7.qhimg.com/d/inn/a0a7ed08/1226img/presents.jpg"></div>
+</body>
+
+</html>
