@@ -1,0 +1,23 @@
+/*逗号分组*/
+
+h2,
+p {
+    color: red;
+}
+
+p[rel=info] {
+    color: #dedede;
+}
+
+div[class~="class1"]{
+	font-weight: bold;
+}
+li:first-child{
+	color: tomato;
+}
+h2:first-letter{
+	color: skyblue;
+}
+.fline:first-line{
+	color: #dedede;
+}
