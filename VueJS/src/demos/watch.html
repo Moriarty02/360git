@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>watch方法</title>
+    <script type="text/javascript" src="../../lib/vue.js"></script>
+</head>
+
+<body>
+    <p id="con">{{fullname}}</p>
+    <p id="con2">{{fullname}}</p>
+    <script type="text/javascript">
+    var vm = new Vue({
+        el: "#con",
+        data: {
+            firstname: "Jim",
+            lastname: "Moriarty",
+            fullname: "Jim Moriarty"
+        },
+
+    });
+    vm.$watch("firstname", function(val) {
+        this.fullname = val + " . " + this.lastname;
+    });
+    vm.$watch("lastname", function(val) {
+
+        this.fullname = this.firstname + " . " + val;
+    });
+    var vm2 = new Vue({
+        el: "#con2",
+        data: {
+            firstname: 'jim',
+            lastname: "moriarty",
+           
+        },
+        computed: {
+            fullname: {
+                get: function() {
+                    return this.firstname + " " + this.lastname;
+                },
+                set: function(str) {
+                    var _fullname = str.split(" ");
+                    this.firstname = _fullname[0];
+                    this.lastname = _fullname[_fullname.length - 1];
+                }
+            }
+
+        }
+
+    });
+    </script>
+</body>
+
+</html>

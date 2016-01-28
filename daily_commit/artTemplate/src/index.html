@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>artTemplate Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="../lib/jQuery.js"></script>
+    <script type="text/javascript" src="../lib/template.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+    </div>
+    <script type="text/html" id="demo">
+        <h2 class="center">{{Consume.Moneys.totalMoney}}</h2>
+        <table class="table">
+            <thead>
+                <td>PayWayName</td>
+                <td>TotalMoney</td>
+                <td>TotalNumber</td>
+                <td>TradeSource</td>
+                <td>CreateTime</td>
+                {{each Consume.record as value index}}
+                <tr>
+                    <td>{{value["PayWayName"]}}</td>
+                    <td>{{value["TotalMoney"]}}</td>
+                    <td>{{initalfoo(value["TotalNumber"])}}</td>
+                    <td>{{value["TradeSource"]}}</td>
+                    <td>{{value["CreateTime"]}}</td>
+                </tr>
+                {{/each}}
+            </thead>
+        </table>
+    </script>
+    <script type="text/javascript">
+    //自定义方法
+    //
+    template.helper("initalfoo", function(data) {
+        var result = "鉴别不出来";
+        console.log(data);
+        switch (+data) {
+            case 1:
+                result = "大穷逼";
+                break;
+            case 2:
+                result = "小穷逼";
+                break;
+            case 3:
+                result = "中农";
+                break;
+            case 0:
+                result = "土豪";
+                break;
+
+        }
+         return result;
+    });
+
+    function render(data, templates) {
+        var html = template(templates, data);
+        var wrapper = $(".wrap");
+        wrapper.html(html);
+    }
+    $.get("./data.js", function(data) {
+        data = eval("" + data + "");
+        render(data, "demo");
+    });
+    </script>
+</body>
+
+</html>

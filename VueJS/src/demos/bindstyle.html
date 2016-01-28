@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bind style</title>
+    <script type="text/javascript" src="../../lib/vue.js"></script>
+</head>
+
+<body>
+    <div class="demo" v-bind:style="stylesheet">ssss</div>
+    <script type="text/javascript">
+    var vm = new Vue({
+        el: ".demo",
+        data: {
+            stylesheet: {
+                color: "red",
+                background: "yellow"
+            }
+        }
+
+    });
+    </script>
+</body>
+
+</html>

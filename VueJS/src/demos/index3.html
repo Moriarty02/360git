@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo3</title>
+    <script type="text/javascript" src="../../lib/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    new Vue({
+        el: "#app",
+        data: {
+            todos: [{
+                    text: "demo1"
+                }, {
+                    text: "demo2"
+                }, {
+                    text: "demo3"
+                }
+
+            ]
+        }
+
+    })
+    </script>
+</body>
+
+</html>

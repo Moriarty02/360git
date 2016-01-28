@@ -1,0 +1,17 @@
+.wrap {
+    width: 1000px;
+    min-height: 400px;
+    background-color: deepskyblue;
+    margin: 10px auto 0;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+}
+
+.table td {
+    border-bottom: 1px solid #dedede;
+}
