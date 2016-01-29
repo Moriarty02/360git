@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo3</title>
+    <script type="text/javascript" src="../../lib/vue.js"></script>
+</head>
+
+<body>
+    <ul>
+        <template  v-for="item in list">
+            <li>{{item.msg}}</li>
+            <li class="driver" ></li>
+        </template>
+    </ul>
+    <script type="text/javascript">
+    var vm = new Vue({
+ 
+
+        data: {
+            list: [{
+                msg: 1
+            }, {
+                msg: 2
+            }, {
+                msg: 3
+            }]
+        }
+
+    });
+    </script>
+</body>
+
+</html>

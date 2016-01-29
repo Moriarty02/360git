@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>局部注册</title>
+    <script type="text/javascript" src="../../lib/vue.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <first-component></first-component>
+    </div>
+    <script type="text/javascript">
+    var first = Vue.extend({
+        template: "<span>  demo for  test</span>",
+    });
+    Vue.component("first-component", first);
+    var demo = new Vue({
+        el: ".box";
+    });
+
+    var Child = Vue.extend({
+        template: "<a href='#'>demo</a>"
+    });
+    var parent = Vue.extend({
+        template: "<span>parent</span>"
+        components: {
+            first - component: Child
+        }
+    });
+    </script>
+    <script type="text/javascript">
+    	Vue.component("my-compontent",{
+    		template:"<div>demo</div>"
+    	})	
+
+    </script>
+</body>
+
+</html>

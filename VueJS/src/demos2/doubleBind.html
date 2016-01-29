@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>双向数据绑定</title>
+    <script type="text/javascript" src="../../lib/vue.js"></script>
+</head>
+
+<body>
+    <div class="model">
+        <p>{{message}}</p>
+        <input v-model="message" type="text" placeholder="placeholder"></input>
+    </div>
+    <div class="checkbox">
+    	<input type="checkbox" id="jack" value="jack" v-model="checknames" checked=""></input>
+    	<label for="jack">jack</label>
+    	<input type="checkbox" id="jhon" value="jhon" v-model="checknames"></input>
+    	<label for="jhon">jhon</label>
+    	<input type="checkbox" id="jane" value="jane" v-model="checknames"></input>
+    	<label for="jane">jane</label>
+    	<br>
+    	<span>checknames: {{checknames|json}}</span>
+
+    </div>
+    <script type="text/javascript">
+    var vm = new Vue({
+        el: ".model",
+        data: {
+            message: 1222222
+        }
+
+    })
+    var vm2=new Vue({
+    	el:".checkbox",
+    	data:{
+    		checknames:[]
+    	}
+
+    });
+    </script>
+</body>
+
+</html>

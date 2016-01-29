@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="../../lib/vue.js"></script>
 </head>
+
 <body>
-	
+    <ul id="con">
+        <li v-for="item in list">{{parentMessage}} - {{item.message}} --- {{$index}}</li>
+    </ul>
+    <script type="text/javascript">
+    var vm = new Vue({
+        el: "#con",
+        data: {
+            parentMessage: "parentMessage",
+            list: [{
+                message: "1222"
+            }, {
+                message: "2222"
+            }, {
+                message: '33333'
+            }]
+        }
+
+    });
+   	var delete=function(length){
+   		vm.list.splice(length-1,1);
+   	}
+    </script>
 </body>
+
 </html>
