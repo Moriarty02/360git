@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>irregualardrop</title>
+</head>
+
+<body>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        padding-top: 10px;
+        background-color: #dedede;
+    }
+    
+    .line {
+        overflow: hidden;
+        width: 100%;
+        height: 1px;
+        margin: 10px 0 10px;
+        background: lightskyblue;
+    }
+    
+    .box {
+        width: 200px;
+        height: 160px;
+        background: yellow;
+        margin: 0 auto;
+    }
+    
+    .first {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    }
+    
+    .second {
+        filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5));
+        -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5));
+    }
+    
+    .svgfilter {
+        -webkit-filter: url(drop-shadow.svg#drop-shadow);
+        -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5));
+    }
+    
+    .extra {
+        border: 8px dotted #000;
+        background: none;
+    }
+    
+    .normal-boxshadow {
+        box-shadow: 4px 4px 4px 4px;
+    }
+    
+    .filter-boxshadow {
+        -webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,.5));
+    }
+    </style>
+</body>
+<div class="line"></div>
+<div class="line"></div>
+<div class="box  normal-boxshadow extra"></div>
+<div class="line"></div>
+<div class="box filter-boxshadow extra"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="box first"></div>
+<div class="line"></div>
+<div class="box second"></div>
+<div class="line"></div>
+<div class="box svgfilter"></div>
+
+</html>

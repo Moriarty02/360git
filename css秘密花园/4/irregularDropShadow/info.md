@@ -1,0 +1,2 @@
+###box-shadow 不支持Semi-transparent images, background images, or  border-image Dotted, dashed, or semi-transparent borders with no background (or when background-clip is not  border-box Speech bubbles
+###可以使用-webkit-filter:drop-shadow(4px 4px 4px rgba(0,0,0, 0.5))代替
