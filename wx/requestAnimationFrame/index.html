@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    #demo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: deepskyblue;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="demo" class="demo" ></div>
+    <script>
+    var demo = document.getElementById('demo');
+
+    function rander() {
+        demo.style.left = parseInt(demo.style.left) + 1 + 'px'; //每一帧向右移动1px
+    }
+    requestAnimationFrame(function() {
+        rander();
+        //当超过300px后才停止
+        if (parseInt(demo.style.left) <= 300) requestAnimationFrame(arguments.callee);
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frame-by-frame animations</title>
+    <style type="text/css">
+    @keyframes loader {
+        to {
+            background-position: -800% 0;
+        }
+    }
+    
+    @keyframes tusiji{
+    	to{
+    		background-position: 0 -400%;
+    	}
+    }
+    .tusiji {
+        width: 32px;
+        height: 35px;
+        background: url(tusiji.png) 0 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-animation: tusiji 0.5s infinite steps(4);
+        -o-animation: tusiji 0.5s infinite steps(4);
+        animation: tusiji 0.5s infinite steps(4);
+    }
+    
+    .loader {
+        width: 100px;
+        height: 100px;
+        background: url(loader.png) 0 0;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-animation: loader 1s infinite steps(8);
+        -o-animation: loader 1s infinite steps(8);
+        animation: loader 1s infinite steps(8);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div class="tusiji"></div>
+</body>
+
+</html>

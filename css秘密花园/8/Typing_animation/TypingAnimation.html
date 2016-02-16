@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Typing animation</title>
+    <style type="text/css">
+    @keyframes typing {
+        from {
+            width: 0%;
+        }
+    }
+    
+    @keyframes caret {
+        50% {
+            border-color: currentColor;
+        }
+    }
+    
+    html {
+        font-size: 24px;
+    }
+    
+    h1 {
+        width: 16ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 5s typing;
+        border-right: .05em solid transparent;
+        animation: typing 6s steps(20), caret 1s steps(1) infinite;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>CSS is awesome!dddsssssssssssssdd</h1>
+    <script type="text/javascript">
+    function $$(name) {
+        return document.querySelector("" + name);
+    }
+
+    var init = function(dom) {
+        var style = dom.style,
+            len = dom.textContent.length;
+           
+        style.width = len + "ch";
+      
+        style.animationTimingFunction = "steps(" + len + "),steps(1)";
+
+    };
+   
+    init($$("h1"));
+    </script>
+</body>
+
+</html>

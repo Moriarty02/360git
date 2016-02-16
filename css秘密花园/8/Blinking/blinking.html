@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>blinking</title>
+    <style type="text/css">
+    @keyframes blink-smooth {
+        50% {
+            color: transparent;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            color: transparent;
+        }
+    }
+    
+    p {
+        font-size: 52px;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+    }
+    
+    .highlight {
+        -webkit-animation: 0.5s blink-smooth 6;
+        -o-animation: 0.5s blink-smooth 6;
+        animation: 0.5s blink-smooth 6;
+    }
+    
+    .blink {
+        -webkit-animation: 1s blink 3 steps(1);
+        -o-animation: 1s blink 3 steps(1);
+        animation: 1s blink 3 steps(1);
+    }
+    </style>
+</head>
+
+<body>
+    <p class="highlight"> I am robot</p>
+    <p class="blink"> I am robot</p>
+</body>
+
+</html>
