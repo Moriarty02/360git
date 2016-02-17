@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation_along_circle_path</title>
+    <style type="text/css">
+    /*version 1
+    @keyframes spin {
+        from {
+            transform: translate(50%, 150px) rotate(0turn) translate(-50%, -150px);
+        }
+        to {
+            transform: translate(50%, 150px) rotate(1turn) translate(-50%, -150px);
+        }
+    }
+    
+    @keyframes spin-reverse {
+        from {
+            transform: translate(50%, 50%) rotate(1turn) translate(-50%, -50%);
+        }
+        to {
+            transform: translate(50%, 50%) rotate(0turn) translate(-50%, -50%);
+        }
+    }
+    */
+    /*version2
+    
+    @keyframes spin {
+        from {
+            transform: translate(50%, 150px) rotate(0turn) translate(-50%, -150px) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+        }
+        to {
+            transform: translate(50%, 150px) rotate(1turn) translate(-50%, -150px) translate(50%, 50%) rotate(0turn) translate(-50%, -50%);
+        }
+    } */
+
+
+    /*version 3
+    @keyframes spin {
+        from {
+            transform: translateY(150px) translateY(-50%) rotate(0turn) translateY(-150px) translateY(50%) rotate(1turn);
+        }
+        to {
+            transform: translateY(150px) translateY(-50%) rotate(1turn) translateY(-150px) translateY(50%) rotate(0turn);
+        }
+    }*/
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0turn) translateY(-150px) translateY(50%) rotate(1turn);
+        }
+        to {
+            transform: rotate(1turn) translateY(-150px) translateY(50%) rotate(0turn);
+        }
+    }
+    
+    .path {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        background: lightskyblue;
+    }
+    
+    .avastar {
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: 50%;
+        /*用于version 4*/
+        top: 50%;
+        margin-top: -25px;
+        /*end*/
+        -webkit-animation: spin 3s infinite linear;
+        -o-animation: spin 3s infinite linear;
+        animation: spin 3s infinite linear;
+    }
+    
+    .avastar > img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        animation: inherit;
+        animation-name: spin-reverse;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="path">
+        <div class="avastar">
+            <img src="adamcatlace.jpg" class="">
+        </div>
+    </div>
+</body>
+
+</html>

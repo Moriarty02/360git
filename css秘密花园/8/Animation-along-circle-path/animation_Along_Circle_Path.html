@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation_along_circle_path</title>
+    <style type="text/css">
+    @keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+    
+    .path {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        background: lightskyblue;
+    }
+    
+    .avastar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        -webkit-animation: spin 3s infinite linear;
+        -o-animation: spin 3s infinite linear;
+        animation: spin 3s infinite linear;
+        transform-origin: 50% 150px;
+    }
+    
+    .avastar > img {
+        width: 100%;
+        border-radius: 50%;
+        -webkit-animation: inherit;
+        -o-animation: inherit;
+        animation: inherit;
+        animation-direction: reverse;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="path">
+        <div class="avastar">
+            <img src="adamcatlace.jpg" class="avastar-reverse">
+        </div>
+    </div>
+</body>
+
+</html>

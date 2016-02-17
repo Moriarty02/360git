@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SmoothStateAnimation</title>
+    <style type="text/css">
+    @keyframes move {
+        to {
+            background-position: 100% 0;
+        }
+    }
+    
+    .view {
+        width: 150px;
+        height: 150px;
+        background: url(14761.jpg);
+        background-size: auto 100%;
+        -webkit-animation: move 10s infinite alternate;
+        -o-animation: move 10s infinite alternate;
+        animation: move 10s infinite alternate;
+        -webkit-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+    
+    .view:focus,
+    .view:hover {
+		-webkit-animation-play-state: running;
+		-o-animation-play-state: running;
+		animation-play-state: running;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="view"></div>
+</body>
+
+</html>
