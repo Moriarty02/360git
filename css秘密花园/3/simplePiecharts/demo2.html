@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    @keyframes spin {
+        to {
+            transform: rotate(.5turn);
+        }
+    }
+    
+    @keyframes bg {
+        50% {
+            background: #655;
+        }
+    }
+    
+    .pie {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: yellowgreen;
+        background-image: linear-gradient(to right, transparent 50%, currentColor 0);
+        color: #655;
+    }
+    
+    .pie::before {
+        content: '';
+        display: block;
+        margin-left: 50%;
+        height: 100%;
+        border-radius: 0 100% 100% 0 / 50%;
+        background-color: inherit;
+        transform-origin: left;
+        /* [Rest of styling stays the same] */
+        animation: spin 50s linear infinite, bg 100s step-end infinite;
+        animation-play-state: paused;
+        animation-delay: inherit;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="pie" style="animation-delay: -20s"></div>
+    <div class="pie" style="animation-delay: -60s"></div>
+</body>
+
+</html>

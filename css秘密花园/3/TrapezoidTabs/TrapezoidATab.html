@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trapezoid tabs
+    </title>
+    <style type="text/css">
+    .navs {
+        padding: 5px;
+        font-family: "sans-serif"
+    }
+    
+    .tab {
+        position: relative;
+        display: inline-block;
+        padding: .5em 1em .35em;
+        color: white;
+        cursor: pointer;
+        margin-right: 24px;
+    }
+    
+    .tab::before {
+        content: '';
+        /* To generate the box */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: #58a;
+        transform: perspective(.5em) rotateX(5deg);
+    }
+    
+    .tab:hover::before {
+        background: lightskyblue;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="navs">
+        <div class="tab">About</div>
+        <div class="tab">Contact</div>
+        <div class="tab">Home</div>
+        <div class="tab">Product</div>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>simple pie charts</title>
+    <meta keyword="transform-based solution">
+    <style type="text/css">
+    /**
+ * Animated pie chart
+ */
+    
+    .pie {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: yellowgreen;
+        background-image: linear-gradient(to right, transparent 50%, currentColor 0);
+        color: #655;
+    }
+    
+    .pie::before {
+        content: '';
+        display: block;
+        margin-left: 50%;
+        height: 100%;
+        border-radius: 0 100% 100% 0 / 50%;
+        background-color: inherit;
+        transform-origin: left;
+        animation: spin 3s linear infinite, bg 6s step-end infinite;
+        -webkit-animation-play-state: running;
+        -o-animation-play-state: running;
+        animation-play-state: running;
+    }
+    
+    .pie:hover::before{
+    	-webkit-animation-play-state: paused;
+    	-o-animation-play-state: paused;
+    	animation-play-state: paused;
+    }
+    @keyframes spin {
+        to {
+            transform: rotate(.5turn);
+        }
+    }
+    
+    @keyframes bg {
+        50% {
+            background: currentColor;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="pie"></div>
+</body>
+
+</html>
