@@ -1,0 +1,34 @@
+@mixin demo{
+	width: 100px;
+	height: 100px;
+}
+.box{
+	line-height: 10px;
+	@include demo;
+}
+ .parent {
+ 	background: #333;
+ }
+ .box{
+ 	@extend .parent;
+ }
+ %pt10{
+ 	padding-top: 10px;
+ }
+ .box{
+ 	margin: 0 auto;
+ 	@extend %pt10;
+ }
+ //interpolation
+ $properties:(margin,padding);
+ @mixin set-value($side,$value){
+ 	@each $prop in $properties{
+ 		#{$prop}-#{$side}:$value;
+ 	}
+ }
+ .test{
+	@include set-value(top,14px)
+
+ }
+ //计算
+ 

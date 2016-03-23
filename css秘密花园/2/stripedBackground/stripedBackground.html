@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>解决条纹背景</title>
+    <style type="text/css">
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #dedede;
+        margin-bottom: 22px;
+    }
+    
+    .striped {
+        background: linear-gradient(45deg,#fb3 50%, #58a 50%);
+        background-size: 100% 30px ;
+    }
+    
+    .striped1 {
+        background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+        background-size: 100% 45px;
+    }
+    
+    .toright {
+        background: linear-gradient(to right, #fb3 50%, #58a 0);
+        background-size: 30px 100%;
+    }
+    
+    .diagonal {
+        background: linear-gradient(45deg, #fb3 50%, #58a 0);
+        background-size: 30px 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box striped"></div>
+    <div class="box striped1"></div>
+    <div class="box toright"></div>
+    <div class="box  diagonal"></div>
+</body>
+
+</html>

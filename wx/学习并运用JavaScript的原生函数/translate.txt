@@ -1,0 +1,3 @@
+https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know
+每个开发者努力编写维护，可读性和可重用的代码。随着应用程序变得越来越大的代码结构变得更为重要。设计模式证明是解决这一难题的关键 - 在特定的情况下，提供了常见问题的组织结构
+JavaScript的Web开发人员经常与设计模式进行互动，甚至在不知不觉中，在创建应用程序时

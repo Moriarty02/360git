@@ -1,0 +1,21 @@
+.text1 {
+  content: hello; }
+
+.text2 {
+  content: "world"; }
+
+.text3 {
+  content: AAAA; }
+
+.text4 {
+  content: aaaa;
+  width: 20px; }
+
+body {
+  width: 20%; }
+
+.demo {
+  width: 4;
+  color: b; }
+
+/*# sourceMappingURL=function.css.map */

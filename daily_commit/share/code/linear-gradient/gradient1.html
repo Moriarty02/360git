@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>liear-gradient</title>
+    <style type="text/css">
+    html {
+        font-size: 14px;
+    }
+    
+    .box {
+        width: 400px;
+        height: 400px;
+        margin: 50px;
+    }
+    .box1{
+    	background:linear-gradient( 0deg, blue, green 40%, red );
+    }
+    .box2{
+		background: -webkit-linear-gradient(30deg,#000,#fff);
+
+    }
+    .box3{
+    		background: -webkit-linear-gradient(top left, #acd, #f88);
+    		background: -o-linear-gradient(top left, #acd, #f88);
+    		background: linear-gradient(to bottom right, #acd, #f88);	
+    		
+    }
+    .box4{
+    	background: -webkit-linear-gradient(left, #ace 25%, #f96 25%, #ace 25%, #f96 25%);
+    }
+    .box5{
+    	background: -webkit-linear-gradient(left, #ace 10%, #f96 90%);
+    }
+    .box6{
+		background: -webkit-linear-gradient(top, #ace, #f96, #ace, #f96, #ace);
+
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+$demo:12px;
+@mixin test($width, $height) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    margin-top: -$height/2;
+    margin-left: -$width/2;
+}
+
+.box {
+    @include test(100px, 100px);
+}
+
+@mixin showhidden($bool:true) {
+    @if $bool {
+        @debug "$bool is #{$bool}";
+        display: block;
+    }
+    @else {
+    	@debug "$bool is #{$bool}";
+    	display: none;
+    }
+}
+.block{
+	@include showhidden;
+}
+.hide{
+	@include showhidden(false);
+}
+//for
+@for $i from 1 through 3 {
+	.item-#{$i} {
+		width: 2rem*$i;
+	}
+}
+// for to 
+@for $i from 2 to 6 {
+	.item-#{$i*3} {
+		color: #333;
+	}
+}
+//网格系统
+$grid-prefix:span!default;
+$grid-width:60px !default;
+$grid-gutter:20px !default;
+ %grid{
+ 	float: left;
+ 	margin-left: $grid-gutter/2;
+ 	margin-right: $grid-gutter/2;
+ }
+
+ @for $i from 1 through 12 {
+ 	.#{$grid-prefix}#{$i}{
+ 		width: $grid-width*$i+$grid-gutter*($i - 1);
+ 		@extend %grid;
+ 	}
+ }
+//while
+$type:4;
+$type-width:20px;
+@while $type>=0{
+	.while-#{$type}{
+		width: $type-width+$type;
+	}
+	$type:$type - 1
+}
+//each
+$list:left right top center;
+@mixin author-images{
+	@each $author in $list{
+		.photo-#{$author}{
+			background-image: url("./#{$author}.png");
+		}
+	}
+
+}
+.author-bio{
+	@include author-images;
+}

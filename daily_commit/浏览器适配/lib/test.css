@@ -1,0 +1,189 @@
+ body {
+     background: #fff
+ }
+ 
+ .header {
+     width: 100%;
+     height: 4.694444rem;
+     background: url(http://p2.qhimg.com/d/inn/a2638942/safeimgs/banner2.png);
+     background-size: 100% 100%;
+     color: #fff;
+     overflow: hidden;
+ }
+ 
+ .topTip {
+     font-size: 10px;
+     float: right;
+     margin-top: .333333rem;
+     margin-right: .333333rem
+ }
+ 
+ .appInfo {
+     margin-top: 2.111111rem;
+     margin-left: .333333rem;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+ }
+ 
+ .appImg {
+     width: 1.666667rem;
+     height: 1.666667rem
+ }
+ 
+ .appImg img {
+     width: 100%;
+     border-radius: 12px;
+ }
+ 
+ .appDesc {
+     -webkit-flex: 1;
+     flex: 1;
+     padding-left: .222222rem
+ }
+ 
+ .appDesc p {
+     line-height: .583333rem
+ }
+ 
+ .appName {
+     font-size: 15px
+ }
+ 
+ .appVersion {
+     font-size: 12px
+ }
+ 
+ .appDevp {
+     font-size: 12px
+ }
+ 
+ .graph {
+     text-align: center;
+     margin-top: -0.388889rem
+ }
+ 
+ .circlrCon {
+     margin: 0 auto;
+     width: 2.444444rem;
+     height: 2.444444rem;
+     line-height: 2.222222rem
+ }
+ 
+ .safetyHigh {
+     background: url(http://p3.qhimg.com/d/inn/b7f2110e/high.png);
+     background-size: cover
+ }
+ 
+ .safetyMiddle {
+     background: url(http://p5.qhimg.com/d/inn/421fc869/middle.png);
+     background-size: cover
+ }
+ 
+ .point {
+     line-height: 2.472222rem;
+     font-size: 27px;
+     color: #fff
+ }
+ 
+ .safePoint {
+     margin-top: .166667rem;
+     font-size: 15px;
+     color: #000
+ }
+ 
+ .safeDesc {
+     color: #07db7f
+ }
+ 
+ .find {
+     font-size: 15px;
+     color: #000;
+     opacity: .5
+ }
+ 
+ .info {
+     margin: .5rem 0 0 .694444rem
+ }
+ 
+ .infoItem {
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     margin-bottom: .722222rem
+ }
+ 
+ .infoImg {
+     width: .666667rem;
+     height: .666667rem;
+     margin-top: .166667rem
+ }
+ 
+ .spite1 {
+     background: url(http://p2.qhimg.com/d/inn/a2638942/safeimgs/icons.jpg) left top no-repeat;
+     background-size: cover
+ }
+ 
+ .spite2 {
+     background: url(http://p2.qhimg.com/d/inn/a2638942/safeimgs/icons.jpg) -0.722222rem top no-repeat;
+     background-size: cover
+ }
+ 
+ .spite3 {
+     background: url(http://p2.qhimg.com/d/inn/a2638942/safeimgs/icons.jpg) -1.333333rem top no-repeat;
+     background-size: cover
+ }
+ 
+ .infoTitle {
+     font-size: 12px;
+     color: #000;
+     opacity: .5;
+     margin-bottom: .166667rem
+ }
+ 
+ .infoDesc {
+     -webkit-flex: 1;
+     flex: 1;
+     margin-left: .333333rem;
+     font-size: 14px;
+     color: #000
+ }
+ 
+ .skyblue {
+     color: #42c8bc
+ }
+ 
+ .yellow {
+     color: #fbc192
+ }
+ 
+ .bottomDesc {
+     font-size: 15px;
+     color: #000;
+     margin-left: .222222rem
+ }
+ 
+ .footer {
+     min-height: 2.222222rem;
+     background: url(http://p9.qhimg.com/d/inn/f9c500e0/footer.jpg) left center no-repeat;
+     background-size: 100% 100%
+ }
+ 
+ .footer p {
+     padding-left: 3.472222rem;
+     color: #fff
+ }
+ 
+ .f_desc1 {
+     padding-top: .694444rem;
+     font-size: 14px
+ }
+ 
+ .f_desc2 {
+     padding-top: .111111rem;
+     font-size: 12px
+ }

@@ -1,0 +1,19 @@
+.box {
+  line-height: 10px;
+  width: 100px;
+  height: 100px; }
+
+.parent, .box {
+  background: #333; }
+
+.box {
+  padding-top: 10px; }
+
+.box {
+  margin: 0 auto; }
+
+.test {
+  margin-top: 14px;
+  padding-top: 14px; }
+
+/*# sourceMappingURL=sec1.css.map */

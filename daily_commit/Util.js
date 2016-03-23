@@ -1,5 +1,5 @@
 var Util = {
-    version:1.0,
+    version: 1.0,
     /**
      * log用于弹窗提示或者console.log
      * @         Author                   Moriarty
@@ -16,16 +16,16 @@ var Util = {
         }
 
     },
-     /**
-      * 提交到某个接口
-      * @         Author                   Moriarty
-      * @DateTime 2016-01-25T15:40:24+0800
-      * @param    {[type]}                 sdata        send data
-      * @param    {[type]}                 type         get||post
-      * @param    {[type]}                 send_url      destinate url
-      * @param    {[type]}                 callback_url  success url
-      * @return   {[type]}                              [description]
-      */
+    /**
+     * 提交到某个接口
+     * @         Author                   Moriarty
+     * @DateTime 2016-01-25T15:40:24+0800
+     * @param    {[type]}                 sdata        send data
+     * @param    {[type]}                 type         get||post
+     * @param    {[type]}                 send_url      destinate url
+     * @param    {[type]}                 callback_url  success url
+     * @return   {[type]}                              [description]
+     */
     do_ajax: function(sdata, type, send_url, callback_url) {
         $.ajax({
             type: type,
@@ -136,3 +136,17 @@ var Util = {
     }
 
 };
+
+ function getCookie(c_name) {
+
+        var name = "";
+        var cookies = document.cookie.split(";");
+        for (var i = 0, len = cookies.length; i < len; i++) {
+            name = decodeURI(cookies[i].split("=")[0]);
+            if (name === c_name) {
+                return decodeURI(cookies[i].split("=")[1]);
+            }
+        }
+        return "";
+
+    }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+  </head>
+  <body>
+   
+  <!--  <div id="box"></div>
+  <script type="text/babel">
+    var Component=React.createClass({
+           getInitialState:function(){
+               return {value:"hello"};
+           },
+           handleChange:function(e){
+             this.setState({value:e.target.value});
+           },
+           render:function(){
+             var  value=this.state.value;
+             return (
+               <div>
+                 <input type="text" value={value} onChange={this.handleChange}></input>
+                 <p>{value}</p>
+  
+              </div>
+             );
+      
+           },
+      
+      });
+     ReactDOM.render(<Component/>,document.getElementById("box")) 
+
+
+
+   </script>-->
+    <div id="box"></div>
+   <script type="text/babel">
+     var DataBind=React.createClass({
+      render:function(){
+      var data=this.state.data;
+        return(
+        <div>
+          <input type="text" value={data} onChange={this.handler}></input>
+          <p>{data}</p>  
+
+        </div>
+        ) 
+        
+      },
+      getInitialState:function(){
+        return {data:"demo"};
+
+      },
+      handler:function(e){
+          this.setState({data:e.target.value});
+      }
+
+
+     });
+    ReactDOM.render(<DataBind></DataBind>,document.getElementById("box"));
+
+   </script>
+  </body>
+</html>

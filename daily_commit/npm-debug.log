@@ -1,0 +1,1155 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gulp' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of E:\360git\daily_commit\package.json
+5 verbose readDependencies loading dependencies from E:\360git\daily_commit\package.json
+6 silly cache add args [ 'gulp', null ]
+7 verbose cache add spec gulp
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'gulp',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'gulp',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed gulp@*
+10 verbose addNamed "*" is a valid semver range for gulp
+11 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+12 silly mapToRegistry name gulp
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gulp
+16 verbose addNameRange registry:https://registry.npmjs.org/gulp not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/gulp
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 17:05:51
+20 verbose request id 4b72ba062d56ab38
+21 verbose etag "1BV2SVOVWNERVC75SDOWEK5E3"
+22 http request GET https://registry.npmjs.org/gulp
+23 http 304 https://registry.npmjs.org/gulp
+24 verbose headers { date: 'Thu, 17 Mar 2016 09:05:57 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"1BV2SVOVWNERVC75SDOWEK5E3"',
+24 verbose headers   age: '12',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-lhr6331-LHR',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '2',
+24 verbose headers   'x-timer': 'S1458205557.191324,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Thu, 17 Mar 2016 09:05:57 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"1BV2SVOVWNERVC75SDOWEK5E3"',
+25 silly get     age: '12',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-lhr6331-LHR',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '2',
+25 silly get     'x-timer': 'S1458205557.191324,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/gulp from cache
+27 verbose get saving gulp to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\gulp\.cache.json
+28 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
+29 silly addNameRange versions [ 'gulp',
+29 silly addNameRange   [ '0.0.1',
+29 silly addNameRange     '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.0.4',
+29 silly addNameRange     '0.0.5',
+29 silly addNameRange     '0.0.7',
+29 silly addNameRange     '0.0.8',
+29 silly addNameRange     '0.0.9',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '2.0.0',
+29 silly addNameRange     '2.0.1',
+29 silly addNameRange     '2.1.0',
+29 silly addNameRange     '2.2.0',
+29 silly addNameRange     '2.3.0',
+29 silly addNameRange     '2.4.0',
+29 silly addNameRange     '2.4.1',
+29 silly addNameRange     '2.6.0',
+29 silly addNameRange     '2.6.1',
+29 silly addNameRange     '2.7.0',
+29 silly addNameRange     '3.0.0',
+29 silly addNameRange     '3.1.1',
+29 silly addNameRange     '3.1.2',
+29 silly addNameRange     '3.1.3',
+29 silly addNameRange     '3.1.4',
+29 silly addNameRange     '3.2.0',
+29 silly addNameRange     '3.2.1',
+29 silly addNameRange     '3.2.2',
+29 silly addNameRange     '3.2.3',
+29 silly addNameRange     '3.2.4',
+29 silly addNameRange     '3.2.5',
+29 silly addNameRange     '3.3.0',
+29 silly addNameRange     '3.3.1',
+29 silly addNameRange     '3.3.2',
+29 silly addNameRange     '3.3.4',
+29 silly addNameRange     '3.4.0',
+29 silly addNameRange     '3.5.0',
+29 silly addNameRange     '3.5.1',
+29 silly addNameRange     '3.5.2',
+29 silly addNameRange     '3.5.5',
+29 silly addNameRange     '3.5.6',
+29 silly addNameRange     '3.6.0',
+29 silly addNameRange     '3.6.1',
+29 silly addNameRange     '3.6.2',
+29 silly addNameRange     '3.7.0',
+29 silly addNameRange     '3.8.0',
+29 silly addNameRange     '3.8.1',
+29 silly addNameRange     '3.8.2',
+29 silly addNameRange     '3.8.3',
+29 silly addNameRange     '3.8.4',
+29 silly addNameRange     '3.8.5',
+29 silly addNameRange     '3.8.6',
+29 silly addNameRange     '3.8.7',
+29 silly addNameRange     '3.8.8',
+29 silly addNameRange     '3.8.9',
+29 silly addNameRange     '3.8.10',
+29 silly addNameRange     '3.8.11',
+29 silly addNameRange     '3.9.0',
+29 silly addNameRange     '3.9.1' ] ]
+30 silly addNamed gulp@3.9.1
+31 verbose addNamed "3.9.1" is a plain semver version for gulp
+32 silly cache afterAdd gulp@3.9.1
+33 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\gulp\3.9.1\package\package.json not in flight; writing
+34 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\gulp\3.9.1\package\package.json written
+35 silly install resolved [ { name: 'gulp',
+35 silly install resolved     description: 'The streaming build system',
+35 silly install resolved     version: '3.9.1',
+35 silly install resolved     homepage: 'http://gulpjs.com',
+35 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+35 silly install resolved     author:
+35 silly install resolved      { name: 'Fractal',
+35 silly install resolved        email: 'contact@wearefractal.com',
+35 silly install resolved        url: 'http://wearefractal.com/' },
+35 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+35 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion', 'gulp.1' ],
+35 silly install resolved     bin: { gulp: './bin/gulp.js' },
+35 silly install resolved     man: [ 'gulp.1' ],
+35 silly install resolved     dependencies:
+35 silly install resolved      { archy: '^1.0.0',
+35 silly install resolved        chalk: '^1.0.0',
+35 silly install resolved        deprecated: '^0.0.1',
+35 silly install resolved        'gulp-util': '^3.0.0',
+35 silly install resolved        interpret: '^1.0.0',
+35 silly install resolved        liftoff: '^2.1.0',
+35 silly install resolved        minimist: '^1.1.0',
+35 silly install resolved        orchestrator: '^0.3.0',
+35 silly install resolved        'pretty-hrtime': '^1.0.0',
+35 silly install resolved        semver: '^4.1.0',
+35 silly install resolved        tildify: '^1.0.0',
+35 silly install resolved        v8flags: '^2.0.2',
+35 silly install resolved        'vinyl-fs': '^0.3.0' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { coveralls: '^2.7.0',
+35 silly install resolved        eslint: '^1.7.3',
+35 silly install resolved        'eslint-config-gulp': '^2.0.0',
+35 silly install resolved        'graceful-fs': '^3.0.0',
+35 silly install resolved        istanbul: '^0.3.0',
+35 silly install resolved        jscs: '^2.3.5',
+35 silly install resolved        'jscs-preset-gulp': '^1.0.0',
+35 silly install resolved        'marked-man': '^0.1.3',
+35 silly install resolved        mkdirp: '^0.5.0',
+35 silly install resolved        mocha: '^2.0.1',
+35 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+35 silly install resolved        q: '^1.0.0',
+35 silly install resolved        rimraf: '^2.2.5',
+35 silly install resolved        should: '^5.0.1' },
+35 silly install resolved     scripts:
+35 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+35 silly install resolved        lint: 'eslint . && jscs *.js bin/ lib/ test/',
+35 silly install resolved        pretest: 'npm run lint',
+35 silly install resolved        test: 'mocha --reporter spec',
+35 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+35 silly install resolved     engines: { node: '>= 0.9' },
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     gitHead: '9c14e3a13a73a32e424f144d62566671b2fcdbed',
+35 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+35 silly install resolved     _id: 'gulp@3.9.1',
+35 silly install resolved     _shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+35 silly install resolved     _from: 'gulp@*',
+35 silly install resolved     _npmVersion: '2.14.14',
+35 silly install resolved     _nodeVersion: '0.10.41',
+35 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+35 silly install resolved     maintainers: [ [Object], [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz' },
+35 silly install resolved     _npmOperationalInternal:
+35 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+35 silly install resolved        tmp: 'tmp/gulp-3.9.1.tgz_1454957415500_0.15343931876122952' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install gulp@3.9.1 into E:\360git\daily_commit
+37 info installOne gulp@3.9.1
+38 verbose installOne of gulp to E:\360git\daily_commit not in flight; installing
+39 verbose lock using C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\_locks\gulp-5b524c2506ca4846.lock for E:\360git\daily_commit\node_modules\gulp
+40 silly install write writing gulp 3.9.1 to E:\360git\daily_commit\node_modules\gulp
+41 verbose unbuild node_modules\gulp
+42 silly gentlyRm E:\360git\daily_commit\node_modules\gulp is being purged from base E:\360git\daily_commit
+43 verbose gentlyRm don't care about contents; nuking E:\360git\daily_commit\node_modules\gulp
+44 verbose tar unpack C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\gulp\3.9.1\package.tgz
+45 verbose tar unpacking to E:\360git\daily_commit\node_modules\gulp
+46 silly gentlyRm E:\360git\daily_commit\node_modules\gulp is being purged
+47 verbose gentlyRm don't care about contents; nuking E:\360git\daily_commit\node_modules\gulp
+48 silly gunzTarPerm modes [ '777', '666' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+51 silly gunzTarPerm extractEntry README.md
+52 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+53 silly gunzTarPerm extractEntry LICENSE
+54 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+55 silly gunzTarPerm extractEntry index.js
+56 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+57 silly gunzTarPerm extractEntry CHANGELOG.md
+58 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+59 silly gunzTarPerm extractEntry bin/gulp.js
+60 silly gunzTarPerm modified mode [ 'bin/gulp.js', 493, 511 ]
+61 silly gunzTarPerm extractEntry completion/README.md
+62 silly gunzTarPerm modified mode [ 'completion/README.md', 420, 438 ]
+63 silly gunzTarPerm extractEntry completion/bash
+64 silly gunzTarPerm modified mode [ 'completion/bash', 420, 438 ]
+65 silly gunzTarPerm extractEntry completion/fish
+66 silly gunzTarPerm modified mode [ 'completion/fish', 420, 438 ]
+67 silly gunzTarPerm extractEntry completion/powershell
+68 silly gunzTarPerm modified mode [ 'completion/powershell', 420, 438 ]
+69 silly gunzTarPerm extractEntry completion/zsh
+70 silly gunzTarPerm modified mode [ 'completion/zsh', 420, 438 ]
+71 silly gunzTarPerm extractEntry gulp.1
+72 silly gunzTarPerm modified mode [ 'gulp.1', 420, 438 ]
+73 silly gunzTarPerm extractEntry lib/completion.js
+74 silly gunzTarPerm modified mode [ 'lib/completion.js', 420, 438 ]
+75 silly gunzTarPerm extractEntry lib/taskTree.js
+76 silly gunzTarPerm modified mode [ 'lib/taskTree.js', 420, 438 ]
+77 verbose write writing to E:\360git\daily_commit\node_modules\gulp\package.json
+78 info preinstall gulp@3.9.1
+79 verbose readDependencies loading dependencies from E:\360git\daily_commit\node_modules\gulp\package.json
+80 silly prepareForInstallMany adding archy@^1.0.0 from gulp dependencies
+81 silly prepareForInstallMany adding chalk@^1.0.0 from gulp dependencies
+82 silly prepareForInstallMany adding deprecated@^0.0.1 from gulp dependencies
+83 silly prepareForInstallMany adding gulp-util@^3.0.0 from gulp dependencies
+84 silly prepareForInstallMany adding interpret@^1.0.0 from gulp dependencies
+85 silly prepareForInstallMany adding liftoff@^2.1.0 from gulp dependencies
+86 silly prepareForInstallMany adding minimist@^1.1.0 from gulp dependencies
+87 silly prepareForInstallMany adding orchestrator@^0.3.0 from gulp dependencies
+88 silly prepareForInstallMany adding pretty-hrtime@^1.0.0 from gulp dependencies
+89 silly prepareForInstallMany adding semver@^4.1.0 from gulp dependencies
+90 silly prepareForInstallMany adding tildify@^1.0.0 from gulp dependencies
+91 silly prepareForInstallMany adding v8flags@^2.0.2 from gulp dependencies
+92 silly prepareForInstallMany adding vinyl-fs@^0.3.0 from gulp dependencies
+93 verbose readDependencies loading dependencies from E:\360git\daily_commit\node_modules\gulp\package.json
+94 silly cache add args [ 'archy@^1.0.0', null ]
+95 verbose cache add spec archy@^1.0.0
+96 silly cache add args [ 'chalk@^1.0.0', null ]
+97 verbose cache add spec chalk@^1.0.0
+98 silly cache add parsed spec Result {
+98 silly cache add   raw: 'archy@^1.0.0',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'archy',
+98 silly cache add   rawSpec: '^1.0.0',
+98 silly cache add   spec: '>=1.0.0 <2.0.0',
+98 silly cache add   type: 'range' }
+99 silly addNamed archy@>=1.0.0 <2.0.0
+100 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for archy
+101 silly addNameRange { name: 'archy', range: '>=1.0.0 <2.0.0', hasData: false }
+102 silly mapToRegistry name archy
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/archy
+106 verbose addNameRange registry:https://registry.npmjs.org/archy not in flight; fetching
+107 silly cache add parsed spec Result {
+107 silly cache add   raw: 'chalk@^1.0.0',
+107 silly cache add   scope: null,
+107 silly cache add   name: 'chalk',
+107 silly cache add   rawSpec: '^1.0.0',
+107 silly cache add   spec: '>=1.0.0 <2.0.0',
+107 silly cache add   type: 'range' }
+108 silly addNamed chalk@>=1.0.0 <2.0.0
+109 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for chalk
+110 silly addNameRange { name: 'chalk', range: '>=1.0.0 <2.0.0', hasData: false }
+111 silly mapToRegistry name chalk
+112 silly mapToRegistry using default registry
+113 silly mapToRegistry registry https://registry.npmjs.org/
+114 silly mapToRegistry uri https://registry.npmjs.org/chalk
+115 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+116 silly cache add args [ 'deprecated@^0.0.1', null ]
+117 verbose cache add spec deprecated@^0.0.1
+118 silly cache add parsed spec Result {
+118 silly cache add   raw: 'deprecated@^0.0.1',
+118 silly cache add   scope: null,
+118 silly cache add   name: 'deprecated',
+118 silly cache add   rawSpec: '^0.0.1',
+118 silly cache add   spec: '>=0.0.1 <0.0.2',
+118 silly cache add   type: 'range' }
+119 silly addNamed deprecated@>=0.0.1 <0.0.2
+120 verbose addNamed ">=0.0.1 <0.0.2" is a valid semver range for deprecated
+121 silly addNameRange { name: 'deprecated', range: '>=0.0.1 <0.0.2', hasData: false }
+122 silly mapToRegistry name deprecated
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry https://registry.npmjs.org/
+125 silly mapToRegistry uri https://registry.npmjs.org/deprecated
+126 verbose addNameRange registry:https://registry.npmjs.org/deprecated not in flight; fetching
+127 silly cache add args [ 'gulp-util@^3.0.0', null ]
+128 verbose cache add spec gulp-util@^3.0.0
+129 silly cache add parsed spec Result {
+129 silly cache add   raw: 'gulp-util@^3.0.0',
+129 silly cache add   scope: null,
+129 silly cache add   name: 'gulp-util',
+129 silly cache add   rawSpec: '^3.0.0',
+129 silly cache add   spec: '>=3.0.0 <4.0.0',
+129 silly cache add   type: 'range' }
+130 silly addNamed gulp-util@>=3.0.0 <4.0.0
+131 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp-util
+132 silly addNameRange { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: false }
+133 silly mapToRegistry name gulp-util
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+137 verbose addNameRange registry:https://registry.npmjs.org/gulp-util not in flight; fetching
+138 silly cache add args [ 'interpret@^1.0.0', null ]
+139 verbose cache add spec interpret@^1.0.0
+140 silly cache add parsed spec Result {
+140 silly cache add   raw: 'interpret@^1.0.0',
+140 silly cache add   scope: null,
+140 silly cache add   name: 'interpret',
+140 silly cache add   rawSpec: '^1.0.0',
+140 silly cache add   spec: '>=1.0.0 <2.0.0',
+140 silly cache add   type: 'range' }
+141 silly addNamed interpret@>=1.0.0 <2.0.0
+142 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for interpret
+143 silly addNameRange { name: 'interpret', range: '>=1.0.0 <2.0.0', hasData: false }
+144 silly mapToRegistry name interpret
+145 silly mapToRegistry using default registry
+146 silly mapToRegistry registry https://registry.npmjs.org/
+147 silly mapToRegistry uri https://registry.npmjs.org/interpret
+148 verbose addNameRange registry:https://registry.npmjs.org/interpret not in flight; fetching
+149 silly cache add args [ 'liftoff@^2.1.0', null ]
+150 verbose cache add spec liftoff@^2.1.0
+151 silly cache add parsed spec Result {
+151 silly cache add   raw: 'liftoff@^2.1.0',
+151 silly cache add   scope: null,
+151 silly cache add   name: 'liftoff',
+151 silly cache add   rawSpec: '^2.1.0',
+151 silly cache add   spec: '>=2.1.0 <3.0.0',
+151 silly cache add   type: 'range' }
+152 silly addNamed liftoff@>=2.1.0 <3.0.0
+153 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for liftoff
+154 silly addNameRange { name: 'liftoff', range: '>=2.1.0 <3.0.0', hasData: false }
+155 silly mapToRegistry name liftoff
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry uri https://registry.npmjs.org/liftoff
+159 verbose addNameRange registry:https://registry.npmjs.org/liftoff not in flight; fetching
+160 silly cache add args [ 'minimist@^1.1.0', null ]
+161 verbose cache add spec minimist@^1.1.0
+162 silly cache add parsed spec Result {
+162 silly cache add   raw: 'minimist@^1.1.0',
+162 silly cache add   scope: null,
+162 silly cache add   name: 'minimist',
+162 silly cache add   rawSpec: '^1.1.0',
+162 silly cache add   spec: '>=1.1.0 <2.0.0',
+162 silly cache add   type: 'range' }
+163 silly addNamed minimist@>=1.1.0 <2.0.0
+164 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for minimist
+165 silly addNameRange { name: 'minimist', range: '>=1.1.0 <2.0.0', hasData: false }
+166 silly mapToRegistry name minimist
+167 silly mapToRegistry using default registry
+168 silly mapToRegistry registry https://registry.npmjs.org/
+169 silly mapToRegistry uri https://registry.npmjs.org/minimist
+170 verbose addNameRange registry:https://registry.npmjs.org/minimist not in flight; fetching
+171 silly cache add args [ 'orchestrator@^0.3.0', null ]
+172 verbose cache add spec orchestrator@^0.3.0
+173 silly cache add parsed spec Result {
+173 silly cache add   raw: 'orchestrator@^0.3.0',
+173 silly cache add   scope: null,
+173 silly cache add   name: 'orchestrator',
+173 silly cache add   rawSpec: '^0.3.0',
+173 silly cache add   spec: '>=0.3.0 <0.4.0',
+173 silly cache add   type: 'range' }
+174 silly addNamed orchestrator@>=0.3.0 <0.4.0
+175 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for orchestrator
+176 silly addNameRange { name: 'orchestrator', range: '>=0.3.0 <0.4.0', hasData: false }
+177 silly mapToRegistry name orchestrator
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry uri https://registry.npmjs.org/orchestrator
+181 verbose addNameRange registry:https://registry.npmjs.org/orchestrator not in flight; fetching
+182 silly cache add args [ 'pretty-hrtime@^1.0.0', null ]
+183 verbose cache add spec pretty-hrtime@^1.0.0
+184 silly cache add parsed spec Result {
+184 silly cache add   raw: 'pretty-hrtime@^1.0.0',
+184 silly cache add   scope: null,
+184 silly cache add   name: 'pretty-hrtime',
+184 silly cache add   rawSpec: '^1.0.0',
+184 silly cache add   spec: '>=1.0.0 <2.0.0',
+184 silly cache add   type: 'range' }
+185 silly addNamed pretty-hrtime@>=1.0.0 <2.0.0
+186 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for pretty-hrtime
+187 silly addNameRange { name: 'pretty-hrtime',
+187 silly addNameRange   range: '>=1.0.0 <2.0.0',
+187 silly addNameRange   hasData: false }
+188 silly mapToRegistry name pretty-hrtime
+189 silly mapToRegistry using default registry
+190 silly mapToRegistry registry https://registry.npmjs.org/
+191 silly mapToRegistry uri https://registry.npmjs.org/pretty-hrtime
+192 verbose addNameRange registry:https://registry.npmjs.org/pretty-hrtime not in flight; fetching
+193 silly cache add args [ 'semver@^4.1.0', null ]
+194 verbose cache add spec semver@^4.1.0
+195 silly cache add parsed spec Result {
+195 silly cache add   raw: 'semver@^4.1.0',
+195 silly cache add   scope: null,
+195 silly cache add   name: 'semver',
+195 silly cache add   rawSpec: '^4.1.0',
+195 silly cache add   spec: '>=4.1.0 <5.0.0',
+195 silly cache add   type: 'range' }
+196 silly addNamed semver@>=4.1.0 <5.0.0
+197 verbose addNamed ">=4.1.0 <5.0.0" is a valid semver range for semver
+198 silly addNameRange { name: 'semver', range: '>=4.1.0 <5.0.0', hasData: false }
+199 silly mapToRegistry name semver
+200 silly mapToRegistry using default registry
+201 silly mapToRegistry registry https://registry.npmjs.org/
+202 silly mapToRegistry uri https://registry.npmjs.org/semver
+203 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+204 silly cache add args [ 'tildify@^1.0.0', null ]
+205 verbose cache add spec tildify@^1.0.0
+206 silly cache add parsed spec Result {
+206 silly cache add   raw: 'tildify@^1.0.0',
+206 silly cache add   scope: null,
+206 silly cache add   name: 'tildify',
+206 silly cache add   rawSpec: '^1.0.0',
+206 silly cache add   spec: '>=1.0.0 <2.0.0',
+206 silly cache add   type: 'range' }
+207 silly addNamed tildify@>=1.0.0 <2.0.0
+208 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for tildify
+209 silly addNameRange { name: 'tildify', range: '>=1.0.0 <2.0.0', hasData: false }
+210 silly mapToRegistry name tildify
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npmjs.org/
+213 silly mapToRegistry uri https://registry.npmjs.org/tildify
+214 verbose addNameRange registry:https://registry.npmjs.org/tildify not in flight; fetching
+215 silly cache add args [ 'v8flags@^2.0.2', null ]
+216 verbose cache add spec v8flags@^2.0.2
+217 silly cache add parsed spec Result {
+217 silly cache add   raw: 'v8flags@^2.0.2',
+217 silly cache add   scope: null,
+217 silly cache add   name: 'v8flags',
+217 silly cache add   rawSpec: '^2.0.2',
+217 silly cache add   spec: '>=2.0.2 <3.0.0',
+217 silly cache add   type: 'range' }
+218 silly addNamed v8flags@>=2.0.2 <3.0.0
+219 verbose addNamed ">=2.0.2 <3.0.0" is a valid semver range for v8flags
+220 silly addNameRange { name: 'v8flags', range: '>=2.0.2 <3.0.0', hasData: false }
+221 silly mapToRegistry name v8flags
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npmjs.org/
+224 silly mapToRegistry uri https://registry.npmjs.org/v8flags
+225 verbose addNameRange registry:https://registry.npmjs.org/v8flags not in flight; fetching
+226 silly cache add args [ 'vinyl-fs@^0.3.0', null ]
+227 verbose cache add spec vinyl-fs@^0.3.0
+228 silly cache add parsed spec Result {
+228 silly cache add   raw: 'vinyl-fs@^0.3.0',
+228 silly cache add   scope: null,
+228 silly cache add   name: 'vinyl-fs',
+228 silly cache add   rawSpec: '^0.3.0',
+228 silly cache add   spec: '>=0.3.0 <0.4.0',
+228 silly cache add   type: 'range' }
+229 silly addNamed vinyl-fs@>=0.3.0 <0.4.0
+230 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for vinyl-fs
+231 silly addNameRange { name: 'vinyl-fs', range: '>=0.3.0 <0.4.0', hasData: false }
+232 silly mapToRegistry name vinyl-fs
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry uri https://registry.npmjs.org/vinyl-fs
+236 verbose addNameRange registry:https://registry.npmjs.org/vinyl-fs not in flight; fetching
+237 verbose request uri https://registry.npmjs.org/orchestrator
+238 verbose request no auth needed
+239 info attempt registry request try #1 at 17:05:57
+240 http request GET https://registry.npmjs.org/orchestrator
+241 verbose request uri https://registry.npmjs.org/archy
+242 verbose request no auth needed
+243 info attempt registry request try #1 at 17:05:57
+244 verbose etag "EE8VL8P4QJLV1EFN701P921M5"
+245 http request GET https://registry.npmjs.org/archy
+246 verbose request uri https://registry.npmjs.org/chalk
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 17:05:57
+249 verbose etag "2YBIIN2WQY6D427724IC7VCXB"
+250 http request GET https://registry.npmjs.org/chalk
+251 verbose request uri https://registry.npmjs.org/gulp-util
+252 verbose request no auth needed
+253 info attempt registry request try #1 at 17:05:57
+254 verbose etag "5PA1SKZCGG3N87G2QJPIVN0QJ"
+255 http request GET https://registry.npmjs.org/gulp-util
+256 verbose request uri https://registry.npmjs.org/interpret
+257 verbose request no auth needed
+258 info attempt registry request try #1 at 17:05:57
+259 verbose etag "6OMB7EGGRO1EVB5KZMER48B7L"
+260 http request GET https://registry.npmjs.org/interpret
+261 verbose request uri https://registry.npmjs.org/minimist
+262 verbose request no auth needed
+263 info attempt registry request try #1 at 17:05:57
+264 verbose etag "199EEWRRVR60GMTV3V7TR6VTG"
+265 http request GET https://registry.npmjs.org/minimist
+266 verbose request uri https://registry.npmjs.org/liftoff
+267 verbose request no auth needed
+268 info attempt registry request try #1 at 17:05:57
+269 verbose etag "9PXOTSCB0Q2T8UNV2VVQKPBT9"
+270 http request GET https://registry.npmjs.org/liftoff
+271 verbose request uri https://registry.npmjs.org/pretty-hrtime
+272 verbose request no auth needed
+273 info attempt registry request try #1 at 17:05:57
+274 verbose etag "E3IU39SLDGJ0XO2KU2UA9O6HV"
+275 http request GET https://registry.npmjs.org/pretty-hrtime
+276 verbose request uri https://registry.npmjs.org/tildify
+277 verbose request no auth needed
+278 info attempt registry request try #1 at 17:05:57
+279 verbose etag "2CC2F7FW8M2IW3LNQX9B1US1H"
+280 http request GET https://registry.npmjs.org/tildify
+281 verbose request uri https://registry.npmjs.org/deprecated
+282 verbose request no auth needed
+283 info attempt registry request try #1 at 17:05:57
+284 verbose etag "A0OJGOUI3CITZE9IYTTE44C2U"
+285 http request GET https://registry.npmjs.org/deprecated
+286 verbose request uri https://registry.npmjs.org/v8flags
+287 verbose request no auth needed
+288 info attempt registry request try #1 at 17:05:57
+289 verbose etag "91F3IR7KMPQ3PHAK5CI86KDXJ"
+290 http request GET https://registry.npmjs.org/v8flags
+291 verbose request uri https://registry.npmjs.org/semver
+292 verbose request no auth needed
+293 info attempt registry request try #1 at 17:05:57
+294 verbose etag "SHHVNQMEDM4KD2JEHCYT7JXN"
+295 http request GET https://registry.npmjs.org/semver
+296 verbose request uri https://registry.npmjs.org/vinyl-fs
+297 verbose request no auth needed
+298 info attempt registry request try #1 at 17:05:57
+299 verbose etag "5N253EKGGEZIZEDRQN3VE0PRZ"
+300 http request GET https://registry.npmjs.org/vinyl-fs
+301 http 304 https://registry.npmjs.org/chalk
+302 verbose headers { date: 'Thu, 17 Mar 2016 09:05:57 GMT',
+302 verbose headers   via: '1.1 varnish',
+302 verbose headers   'cache-control': 'max-age=300',
+302 verbose headers   etag: '"2YBIIN2WQY6D427724IC7VCXB"',
+302 verbose headers   age: '269',
+302 verbose headers   connection: 'keep-alive',
+302 verbose headers   'x-served-by': 'cache-lhr6334-LHR',
+302 verbose headers   'x-cache': 'HIT',
+302 verbose headers   'x-cache-hits': '31',
+302 verbose headers   'x-timer': 'S1458205557.853168,VS0,VE0',
+302 verbose headers   vary: 'Accept' }
+303 silly get cb [ 304,
+303 silly get   { date: 'Thu, 17 Mar 2016 09:05:57 GMT',
+303 silly get     via: '1.1 varnish',
+303 silly get     'cache-control': 'max-age=300',
+303 silly get     etag: '"2YBIIN2WQY6D427724IC7VCXB"',
+303 silly get     age: '269',
+303 silly get     connection: 'keep-alive',
+303 silly get     'x-served-by': 'cache-lhr6334-LHR',
+303 silly get     'x-cache': 'HIT',
+303 silly get     'x-cache-hits': '31',
+303 silly get     'x-timer': 'S1458205557.853168,VS0,VE0',
+303 silly get     vary: 'Accept' } ]
+304 verbose etag https://registry.npmjs.org/chalk from cache
+305 verbose get saving chalk to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\chalk\.cache.json
+306 http 304 https://registry.npmjs.org/archy
+307 verbose headers { date: 'Thu, 17 Mar 2016 09:05:57 GMT',
+307 verbose headers   via: '1.1 varnish',
+307 verbose headers   'cache-control': 'max-age=300',
+307 verbose headers   etag: '"EE8VL8P4QJLV1EFN701P921M5"',
+307 verbose headers   age: '156',
+307 verbose headers   connection: 'keep-alive',
+307 verbose headers   'x-served-by': 'cache-lhr6334-LHR',
+307 verbose headers   'x-cache': 'HIT',
+307 verbose headers   'x-cache-hits': '2',
+307 verbose headers   'x-timer': 'S1458205557.854567,VS0,VE0',
+307 verbose headers   vary: 'Accept' }
+308 silly get cb [ 304,
+308 silly get   { date: 'Thu, 17 Mar 2016 09:05:57 GMT',
+308 silly get     via: '1.1 varnish',
+308 silly get     'cache-control': 'max-age=300',
+308 silly get     etag: '"EE8VL8P4QJLV1EFN701P921M5"',
+308 silly get     age: '156',
+308 silly get     connection: 'keep-alive',
+308 silly get     'x-served-by': 'cache-lhr6334-LHR',
+308 silly get     'x-cache': 'HIT',
+308 silly get     'x-cache-hits': '2',
+308 silly get     'x-timer': 'S1458205557.854567,VS0,VE0',
+308 silly get     vary: 'Accept' } ]
+309 verbose etag https://registry.npmjs.org/archy from cache
+310 verbose get saving archy to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\archy\.cache.json
+311 silly addNameRange number 2 { name: 'chalk', range: '>=1.0.0 <2.0.0', hasData: true }
+312 silly addNameRange versions [ 'chalk',
+312 silly addNameRange   [ '0.1.0',
+312 silly addNameRange     '0.1.1',
+312 silly addNameRange     '0.2.0',
+312 silly addNameRange     '0.2.1',
+312 silly addNameRange     '0.3.0',
+312 silly addNameRange     '0.4.0',
+312 silly addNameRange     '0.5.0',
+312 silly addNameRange     '0.5.1',
+312 silly addNameRange     '1.0.0',
+312 silly addNameRange     '1.1.0',
+312 silly addNameRange     '1.1.1' ] ]
+313 silly addNamed chalk@1.1.1
+314 verbose addNamed "1.1.1" is a plain semver version for chalk
+315 silly addNameRange number 2 { name: 'archy', range: '>=1.0.0 <2.0.0', hasData: true }
+316 silly addNameRange versions [ 'archy', [ '0.0.0', '0.0.1', '0.0.2', '1.0.0' ] ]
+317 silly addNamed archy@1.0.0
+318 verbose addNamed "1.0.0" is a plain semver version for archy
+319 silly cache afterAdd chalk@1.1.1
+320 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\chalk\1.1.1\package\package.json not in flight; writing
+321 silly cache afterAdd archy@1.0.0
+322 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\archy\1.0.0\package\package.json not in flight; writing
+323 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\chalk\1.1.1\package\package.json written
+324 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\archy\1.0.0\package\package.json written
+325 http 304 https://registry.npmjs.org/deprecated
+326 verbose headers { date: 'Thu, 17 Mar 2016 09:05:58 GMT',
+326 verbose headers   via: '1.1 varnish',
+326 verbose headers   'cache-control': 'max-age=300',
+326 verbose headers   etag: '"A0OJGOUI3CITZE9IYTTE44C2U"',
+326 verbose headers   age: '241',
+326 verbose headers   connection: 'keep-alive',
+326 verbose headers   'x-served-by': 'cache-lhr6335-LHR',
+326 verbose headers   'x-cache': 'HIT',
+326 verbose headers   'x-cache-hits': '6',
+326 verbose headers   'x-timer': 'S1458205558.094289,VS0,VE0',
+326 verbose headers   vary: 'Accept' }
+327 silly get cb [ 304,
+327 silly get   { date: 'Thu, 17 Mar 2016 09:05:58 GMT',
+327 silly get     via: '1.1 varnish',
+327 silly get     'cache-control': 'max-age=300',
+327 silly get     etag: '"A0OJGOUI3CITZE9IYTTE44C2U"',
+327 silly get     age: '241',
+327 silly get     connection: 'keep-alive',
+327 silly get     'x-served-by': 'cache-lhr6335-LHR',
+327 silly get     'x-cache': 'HIT',
+327 silly get     'x-cache-hits': '6',
+327 silly get     'x-timer': 'S1458205558.094289,VS0,VE0',
+327 silly get     vary: 'Accept' } ]
+328 verbose etag https://registry.npmjs.org/deprecated from cache
+329 verbose get saving deprecated to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\deprecated\.cache.json
+330 silly addNameRange number 2 { name: 'deprecated', range: '>=0.0.1 <0.0.2', hasData: true }
+331 silly addNameRange versions [ 'deprecated', [ '0.0.1' ] ]
+332 silly addNamed deprecated@0.0.1
+333 verbose addNamed "0.0.1" is a plain semver version for deprecated
+334 silly cache afterAdd deprecated@0.0.1
+335 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\deprecated\0.0.1\package\package.json not in flight; writing
+336 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\deprecated\0.0.1\package\package.json written
+337 http 304 https://registry.npmjs.org/interpret
+338 verbose headers { date: 'Thu, 17 Mar 2016 09:05:58 GMT',
+338 verbose headers   via: '1.1 varnish',
+338 verbose headers   'cache-control': 'max-age=300',
+338 verbose headers   etag: '"6OMB7EGGRO1EVB5KZMER48B7L"',
+338 verbose headers   age: '271',
+338 verbose headers   connection: 'keep-alive',
+338 verbose headers   'x-served-by': 'cache-lhr6323-LHR',
+338 verbose headers   'x-cache': 'HIT',
+338 verbose headers   'x-cache-hits': '5',
+338 verbose headers   'x-timer': 'S1458205558.338990,VS0,VE0',
+338 verbose headers   vary: 'Accept' }
+339 silly get cb [ 304,
+339 silly get   { date: 'Thu, 17 Mar 2016 09:05:58 GMT',
+339 silly get     via: '1.1 varnish',
+339 silly get     'cache-control': 'max-age=300',
+339 silly get     etag: '"6OMB7EGGRO1EVB5KZMER48B7L"',
+339 silly get     age: '271',
+339 silly get     connection: 'keep-alive',
+339 silly get     'x-served-by': 'cache-lhr6323-LHR',
+339 silly get     'x-cache': 'HIT',
+339 silly get     'x-cache-hits': '5',
+339 silly get     'x-timer': 'S1458205558.338990,VS0,VE0',
+339 silly get     vary: 'Accept' } ]
+340 verbose etag https://registry.npmjs.org/interpret from cache
+341 verbose get saving interpret to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\interpret\.cache.json
+342 silly addNameRange number 2 { name: 'interpret', range: '>=1.0.0 <2.0.0', hasData: true }
+343 silly addNameRange versions [ 'interpret',
+343 silly addNameRange   [ '0.1.0',
+343 silly addNameRange     '0.2.0',
+343 silly addNameRange     '0.3.0',
+343 silly addNameRange     '0.3.1',
+343 silly addNameRange     '0.3.2',
+343 silly addNameRange     '0.3.3',
+343 silly addNameRange     '0.3.4',
+343 silly addNameRange     '0.3.5',
+343 silly addNameRange     '0.3.6',
+343 silly addNameRange     '0.3.7',
+343 silly addNameRange     '0.3.8',
+343 silly addNameRange     '0.3.9',
+343 silly addNameRange     '0.3.10',
+343 silly addNameRange     '0.4.0',
+343 silly addNameRange     '0.4.1',
+343 silly addNameRange     '0.4.2',
+343 silly addNameRange     '0.4.3',
+343 silly addNameRange     '0.5.0',
+343 silly addNameRange     '0.5.1',
+343 silly addNameRange     '0.5.2',
+343 silly addNameRange     '0.6.0',
+343 silly addNameRange     '0.6.1',
+343 silly addNameRange     '0.6.2',
+343 silly addNameRange     '0.6.3',
+343 silly addNameRange     '0.6.4',
+343 silly addNameRange     '0.6.5',
+343 silly addNameRange     '0.6.6',
+343 silly addNameRange     '1.0.0' ] ]
+344 silly addNamed interpret@1.0.0
+345 verbose addNamed "1.0.0" is a plain semver version for interpret
+346 silly cache afterAdd interpret@1.0.0
+347 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\interpret\1.0.0\package\package.json not in flight; writing
+348 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\interpret\1.0.0\package\package.json written
+349 info retry will retry, error on last attempt: Error: read ECONNRESET
+350 info retry will retry, error on last attempt: Error: read ECONNRESET
+351 info retry will retry, error on last attempt: Error: read ECONNRESET
+352 info retry will retry, error on last attempt: Error: read ECONNRESET
+353 info retry will retry, error on last attempt: Error: read ECONNRESET
+354 info attempt registry request try #2 at 17:06:41
+355 verbose etag "E3IU39SLDGJ0XO2KU2UA9O6HV"
+356 http request GET https://registry.npmjs.org/pretty-hrtime
+357 info attempt registry request try #2 at 17:06:41
+358 verbose etag "199EEWRRVR60GMTV3V7TR6VTG"
+359 http request GET https://registry.npmjs.org/minimist
+360 info attempt registry request try #2 at 17:06:41
+361 verbose etag "2CC2F7FW8M2IW3LNQX9B1US1H"
+362 http request GET https://registry.npmjs.org/tildify
+363 info attempt registry request try #2 at 17:06:43
+364 http request GET https://registry.npmjs.org/orchestrator
+365 info attempt registry request try #2 at 17:06:43
+366 verbose etag "5N253EKGGEZIZEDRQN3VE0PRZ"
+367 http request GET https://registry.npmjs.org/vinyl-fs
+368 info retry will retry, error on last attempt: Error: read ECONNRESET
+369 info retry will retry, error on last attempt: Error: read ECONNRESET
+370 info retry will retry, error on last attempt: Error: read ECONNRESET
+371 info attempt registry request try #2 at 17:06:58
+372 verbose etag "9PXOTSCB0Q2T8UNV2VVQKPBT9"
+373 http request GET https://registry.npmjs.org/liftoff
+374 info attempt registry request try #2 at 17:07:00
+375 verbose etag "SHHVNQMEDM4KD2JEHCYT7JXN"
+376 http request GET https://registry.npmjs.org/semver
+377 info attempt registry request try #2 at 17:07:02
+378 verbose etag "5PA1SKZCGG3N87G2QJPIVN0QJ"
+379 http request GET https://registry.npmjs.org/gulp-util
+380 info retry will retry, error on last attempt: Error: socket hang up
+381 info retry will retry, error on last attempt: Error: read ECONNRESET
+382 info retry will retry, error on last attempt: Error: read ECONNRESET
+383 info attempt registry request try #2 at 17:07:18
+384 verbose etag "91F3IR7KMPQ3PHAK5CI86KDXJ"
+385 http request GET https://registry.npmjs.org/v8flags
+386 info retry will retry, error on last attempt: Error: read ECONNRESET
+387 info retry will retry, error on last attempt: Error: read ECONNRESET
+388 info retry will retry, error on last attempt: Error: socket hang up
+389 info retry will retry, error on last attempt: Error: read ECONNRESET
+390 info retry will retry, error on last attempt: Error: socket hang up
+391 info retry will retry, error on last attempt: Error: read ECONNRESET
+392 info retry will retry, error on last attempt: Error: read ECONNRESET
+393 info attempt registry request try #3 at 17:08:11
+394 verbose etag "2CC2F7FW8M2IW3LNQX9B1US1H"
+395 http request GET https://registry.npmjs.org/tildify
+396 http 304 https://registry.npmjs.org/tildify
+397 verbose headers { date: 'Thu, 17 Mar 2016 09:08:14 GMT',
+397 verbose headers   via: '1.1 varnish',
+397 verbose headers   'cache-control': 'max-age=300',
+397 verbose headers   etag: '"2CC2F7FW8M2IW3LNQX9B1US1H"',
+397 verbose headers   age: '170',
+397 verbose headers   connection: 'keep-alive',
+397 verbose headers   'x-served-by': 'cache-lhr6326-LHR',
+397 verbose headers   'x-cache': 'HIT',
+397 verbose headers   'x-cache-hits': '4',
+397 verbose headers   'x-timer': 'S1458205694.464369,VS0,VE0',
+397 verbose headers   vary: 'Accept' }
+398 silly get cb [ 304,
+398 silly get   { date: 'Thu, 17 Mar 2016 09:08:14 GMT',
+398 silly get     via: '1.1 varnish',
+398 silly get     'cache-control': 'max-age=300',
+398 silly get     etag: '"2CC2F7FW8M2IW3LNQX9B1US1H"',
+398 silly get     age: '170',
+398 silly get     connection: 'keep-alive',
+398 silly get     'x-served-by': 'cache-lhr6326-LHR',
+398 silly get     'x-cache': 'HIT',
+398 silly get     'x-cache-hits': '4',
+398 silly get     'x-timer': 'S1458205694.464369,VS0,VE0',
+398 silly get     vary: 'Accept' } ]
+399 verbose etag https://registry.npmjs.org/tildify from cache
+400 verbose get saving tildify to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\tildify\.cache.json
+401 silly addNameRange number 2 { name: 'tildify', range: '>=1.0.0 <2.0.0', hasData: true }
+402 silly addNameRange versions [ 'tildify',
+402 silly addNameRange   [ '0.1.0', '0.2.0', '1.0.0', '1.1.0', '1.1.1', '1.1.2' ] ]
+403 silly addNamed tildify@1.1.2
+404 verbose addNamed "1.1.2" is a plain semver version for tildify
+405 silly cache afterAdd tildify@1.1.2
+406 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\tildify\1.1.2\package\package.json not in flight; writing
+407 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\tildify\1.1.2\package\package.json written
+408 info attempt registry request try #3 at 17:08:15
+409 verbose etag "5N253EKGGEZIZEDRQN3VE0PRZ"
+410 http request GET https://registry.npmjs.org/vinyl-fs
+411 info attempt registry request try #3 at 17:08:34
+412 http request GET https://registry.npmjs.org/orchestrator
+413 info attempt registry request try #3 at 17:08:38
+414 verbose etag "E3IU39SLDGJ0XO2KU2UA9O6HV"
+415 http request GET https://registry.npmjs.org/pretty-hrtime
+416 info attempt registry request try #3 at 17:08:46
+417 verbose etag "199EEWRRVR60GMTV3V7TR6VTG"
+418 http request GET https://registry.npmjs.org/minimist
+419 silly get cb [ 304, undefined ]
+420 verbose etag https://registry.npmjs.org/vinyl-fs from cache
+421 verbose get saving vinyl-fs to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\vinyl-fs\.cache.json
+422 info attempt registry request try #3 at 17:08:51
+423 verbose etag "SHHVNQMEDM4KD2JEHCYT7JXN"
+424 http request GET https://registry.npmjs.org/semver
+425 silly addNameRange number 2 { name: 'vinyl-fs', range: '>=0.3.0 <0.4.0', hasData: true }
+426 silly addNameRange versions [ 'vinyl-fs',
+426 silly addNameRange   [ '0.0.1',
+426 silly addNameRange     '0.0.2',
+426 silly addNameRange     '0.1.0',
+426 silly addNameRange     '0.1.1',
+426 silly addNameRange     '0.1.2',
+426 silly addNameRange     '0.1.3',
+426 silly addNameRange     '0.1.4',
+426 silly addNameRange     '0.2.0',
+426 silly addNameRange     '0.2.1',
+426 silly addNameRange     '0.3.0',
+426 silly addNameRange     '0.3.1',
+426 silly addNameRange     '0.3.2',
+426 silly addNameRange     '0.3.3',
+426 silly addNameRange     '0.3.4',
+426 silly addNameRange     '0.3.5',
+426 silly addNameRange     '0.3.6',
+426 silly addNameRange     '0.3.7',
+426 silly addNameRange     '0.3.8',
+426 silly addNameRange     '0.3.9',
+426 silly addNameRange     '0.3.10',
+426 silly addNameRange     '0.3.11',
+426 silly addNameRange     '0.3.12',
+426 silly addNameRange     '0.3.13',
+426 silly addNameRange     '1.0.0',
+426 silly addNameRange     '0.3.14',
+426 silly addNameRange     '2.0.0',
+426 silly addNameRange     '2.1.0',
+426 silly addNameRange     '2.1.1',
+426 silly addNameRange     '2.2.0',
+426 silly addNameRange     '2.2.1',
+426 silly addNameRange     '2.3.0',
+426 silly addNameRange     '2.3.1',
+426 silly addNameRange     '2.3.2',
+426 silly addNameRange     '2.3.3',
+426 silly addNameRange     '2.3.4',
+426 silly addNameRange     '2.4.0',
+426 silly addNameRange     '2.4.1',
+426 silly addNameRange     '2.4.2' ] ]
+427 silly addNamed vinyl-fs@0.3.14
+428 verbose addNamed "0.3.14" is a plain semver version for vinyl-fs
+429 silly cache afterAdd vinyl-fs@0.3.14
+430 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\vinyl-fs\0.3.14\package\package.json not in flight; writing
+431 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\vinyl-fs\0.3.14\package\package.json written
+432 info attempt registry request try #3 at 17:09:03
+433 verbose etag "9PXOTSCB0Q2T8UNV2VVQKPBT9"
+434 http request GET https://registry.npmjs.org/liftoff
+435 info attempt registry request try #3 at 17:09:03
+436 verbose etag "5PA1SKZCGG3N87G2QJPIVN0QJ"
+437 http request GET https://registry.npmjs.org/gulp-util
+438 info attempt registry request try #3 at 17:09:08
+439 verbose etag "91F3IR7KMPQ3PHAK5CI86KDXJ"
+440 http request GET https://registry.npmjs.org/v8flags
+441 silly get cb [ 304, undefined ]
+442 verbose etag https://registry.npmjs.org/minimist from cache
+443 verbose get saving minimist to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\minimist\.cache.json
+444 silly addNameRange number 2 { name: 'minimist', range: '>=1.1.0 <2.0.0', hasData: true }
+445 silly addNameRange versions [ 'minimist',
+445 silly addNameRange   [ '0.0.0',
+445 silly addNameRange     '0.0.1',
+445 silly addNameRange     '0.0.2',
+445 silly addNameRange     '0.0.3',
+445 silly addNameRange     '0.0.4',
+445 silly addNameRange     '0.0.5',
+445 silly addNameRange     '0.0.6',
+445 silly addNameRange     '0.0.7',
+445 silly addNameRange     '0.0.8',
+445 silly addNameRange     '0.0.9',
+445 silly addNameRange     '0.0.10',
+445 silly addNameRange     '0.1.0',
+445 silly addNameRange     '0.2.0',
+445 silly addNameRange     '1.0.0',
+445 silly addNameRange     '1.1.0',
+445 silly addNameRange     '1.1.1',
+445 silly addNameRange     '1.1.2',
+445 silly addNameRange     '1.1.3',
+445 silly addNameRange     '1.2.0' ] ]
+446 silly addNamed minimist@1.2.0
+447 verbose addNamed "1.2.0" is a plain semver version for minimist
+448 silly cache afterAdd minimist@1.2.0
+449 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\minimist\1.2.0\package\package.json not in flight; writing
+450 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\minimist\1.2.0\package\package.json written
+451 silly get cb [ 304, undefined ]
+452 verbose etag https://registry.npmjs.org/pretty-hrtime from cache
+453 verbose get saving pretty-hrtime to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\pretty-hrtime\.cache.json
+454 silly addNameRange number 2 { name: 'pretty-hrtime', range: '>=1.0.0 <2.0.0', hasData: true }
+455 silly addNameRange versions [ 'pretty-hrtime',
+455 silly addNameRange   [ '0.2.0', '0.2.1', '0.2.2', '1.0.0', '1.0.1', '1.0.2' ] ]
+456 silly addNamed pretty-hrtime@1.0.2
+457 verbose addNamed "1.0.2" is a plain semver version for pretty-hrtime
+458 silly cache afterAdd pretty-hrtime@1.0.2
+459 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\pretty-hrtime\1.0.2\package\package.json not in flight; writing
+460 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\pretty-hrtime\1.0.2\package\package.json written
+461 silly get cb [ 304, undefined ]
+462 verbose etag https://registry.npmjs.org/liftoff from cache
+463 verbose get saving liftoff to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\liftoff\.cache.json
+464 silly addNameRange number 2 { name: 'liftoff', range: '>=2.1.0 <3.0.0', hasData: true }
+465 silly addNameRange versions [ 'liftoff',
+465 silly addNameRange   [ '0.1.0',
+465 silly addNameRange     '0.2.0',
+465 silly addNameRange     '0.3.0',
+465 silly addNameRange     '0.4.0',
+465 silly addNameRange     '0.5.0',
+465 silly addNameRange     '0.6.0',
+465 silly addNameRange     '0.7.0',
+465 silly addNameRange     '0.8.0',
+465 silly addNameRange     '0.8.1',
+465 silly addNameRange     '0.8.2',
+465 silly addNameRange     '0.8.3',
+465 silly addNameRange     '0.8.4',
+465 silly addNameRange     '0.8.5',
+465 silly addNameRange     '0.8.6',
+465 silly addNameRange     '0.8.7',
+465 silly addNameRange     '0.9.0',
+465 silly addNameRange     '0.9.1',
+465 silly addNameRange     '0.9.2',
+465 silly addNameRange     '0.9.3',
+465 silly addNameRange     '0.9.4',
+465 silly addNameRange     '0.9.5',
+465 silly addNameRange     '0.9.6',
+465 silly addNameRange     '0.9.7',
+465 silly addNameRange     '0.9.8',
+465 silly addNameRange     '0.10.0',
+465 silly addNameRange     '0.11.0',
+465 silly addNameRange     '0.11.1',
+465 silly addNameRange     '0.11.2',
+465 silly addNameRange     '0.11.3',
+465 silly addNameRange     '0.12.0',
+465 silly addNameRange     '0.12.1',
+465 silly addNameRange     '0.13.0',
+465 silly addNameRange     '0.13.1',
+465 silly addNameRange     '0.13.2',
+465 silly addNameRange     '0.13.3',
+465 silly addNameRange     '0.13.5',
+465 silly addNameRange     '0.13.6',
+465 silly addNameRange     '1.0.0',
+465 silly addNameRange     '1.0.2',
+465 silly addNameRange     '1.0.3',
+465 silly addNameRange     '1.0.4',
+465 silly addNameRange     '2.0.0',
+465 silly addNameRange     '2.0.1',
+465 silly addNameRange     '2.0.2',
+465 silly addNameRange     '2.0.3',
+465 silly addNameRange     '2.1.0',
+465 silly addNameRange     '2.2.0' ] ]
+466 silly addNamed liftoff@2.2.0
+467 verbose addNamed "2.2.0" is a plain semver version for liftoff
+468 silly cache afterAdd liftoff@2.2.0
+469 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\liftoff\2.2.0\package\package.json not in flight; writing
+470 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\liftoff\2.2.0\package\package.json written
+471 silly get cb [ 304, undefined ]
+472 verbose etag https://registry.npmjs.org/semver from cache
+473 verbose get saving semver to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\semver\.cache.json
+474 silly addNameRange number 2 { name: 'semver', range: '>=4.1.0 <5.0.0', hasData: true }
+475 silly addNameRange versions [ 'semver',
+475 silly addNameRange   [ '1.0.0',
+475 silly addNameRange     '1.0.1',
+475 silly addNameRange     '1.0.2',
+475 silly addNameRange     '1.0.3',
+475 silly addNameRange     '1.0.4',
+475 silly addNameRange     '1.0.5',
+475 silly addNameRange     '1.0.6',
+475 silly addNameRange     '1.0.7',
+475 silly addNameRange     '1.0.8',
+475 silly addNameRange     '1.0.9',
+475 silly addNameRange     '1.0.10',
+475 silly addNameRange     '1.0.11',
+475 silly addNameRange     '1.0.12',
+475 silly addNameRange     '1.0.13',
+475 silly addNameRange     '1.0.14',
+475 silly addNameRange     '1.1.0',
+475 silly addNameRange     '1.1.1',
+475 silly addNameRange     '1.1.2',
+475 silly addNameRange     '1.1.3',
+475 silly addNameRange     '1.1.4',
+475 silly addNameRange     '2.0.0-alpha',
+475 silly addNameRange     '2.0.0-beta',
+475 silly addNameRange     '2.0.1',
+475 silly addNameRange     '2.0.2',
+475 silly addNameRange     '2.0.3',
+475 silly addNameRange     '2.0.4',
+475 silly addNameRange     '2.0.5',
+475 silly addNameRange     '2.0.6',
+475 silly addNameRange     '2.0.7',
+475 silly addNameRange     '2.0.8',
+475 silly addNameRange     '2.0.9',
+475 silly addNameRange     '2.0.10',
+475 silly addNameRange     '2.0.11',
+475 silly addNameRange     '2.1.0',
+475 silly addNameRange     '2.2.0',
+475 silly addNameRange     '2.2.1',
+475 silly addNameRange     '2.3.0',
+475 silly addNameRange     '2.3.1',
+475 silly addNameRange     '2.3.2',
+475 silly addNameRange     '3.0.0',
+475 silly addNameRange     '3.0.1',
+475 silly addNameRange     '4.0.0',
+475 silly addNameRange     '4.0.2',
+475 silly addNameRange     '4.0.3',
+475 silly addNameRange     '4.1.0',
+475 silly addNameRange     '4.1.1',
+475 silly addNameRange     '4.2.0',
+475 silly addNameRange     '4.2.1',
+475 silly addNameRange     '4.2.2',
+475 silly addNameRange     '4.3.0',
+475 silly addNameRange     '4.3.1',
+475 silly addNameRange     '4.3.2',
+475 silly addNameRange     '4.3.3',
+475 silly addNameRange     '4.3.4',
+475 silly addNameRange     '4.3.5',
+475 silly addNameRange     '4.3.6',
+475 silly addNameRange     '5.0.0',
+475 silly addNameRange     '5.0.1',
+475 silly addNameRange     '5.0.2',
+475 silly addNameRange     '5.0.3',
+475 silly addNameRange     '5.1.0' ] ]
+476 silly addNamed semver@4.3.6
+477 verbose addNamed "4.3.6" is a plain semver version for semver
+478 silly cache afterAdd semver@4.3.6
+479 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\semver\4.3.6\package\package.json not in flight; writing
+480 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\semver\4.3.6\package\package.json written
+481 silly get cb [ 304, undefined ]
+482 verbose etag https://registry.npmjs.org/gulp-util from cache
+483 verbose get saving gulp-util to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-util\.cache.json
+484 silly addNameRange number 2 { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: true }
+485 silly addNameRange versions [ 'gulp-util',
+485 silly addNameRange   [ '0.0.1',
+485 silly addNameRange     '1.0.0',
+485 silly addNameRange     '1.1.0',
+485 silly addNameRange     '1.1.1',
+485 silly addNameRange     '1.2.0',
+485 silly addNameRange     '1.3.0',
+485 silly addNameRange     '2.0.0',
+485 silly addNameRange     '2.1.1',
+485 silly addNameRange     '2.1.2',
+485 silly addNameRange     '2.1.3',
+485 silly addNameRange     '2.1.4',
+485 silly addNameRange     '2.2.0',
+485 silly addNameRange     '2.2.1',
+485 silly addNameRange     '2.2.2',
+485 silly addNameRange     '2.2.3',
+485 silly addNameRange     '2.2.5',
+485 silly addNameRange     '2.2.6',
+485 silly addNameRange     '2.2.7',
+485 silly addNameRange     '2.2.8',
+485 silly addNameRange     '2.2.9',
+485 silly addNameRange     '2.2.10',
+485 silly addNameRange     '2.2.11',
+485 silly addNameRange     '2.2.12',
+485 silly addNameRange     '2.2.13',
+485 silly addNameRange     '2.2.14',
+485 silly addNameRange     '2.2.15',
+485 silly addNameRange     '2.2.16',
+485 silly addNameRange     '2.2.17',
+485 silly addNameRange     '2.2.18',
+485 silly addNameRange     '2.2.19',
+485 silly addNameRange     '2.2.20',
+485 silly addNameRange     '3.0.0',
+485 silly addNameRange     '3.0.1',
+485 silly addNameRange     '3.0.2',
+485 silly addNameRange     '3.0.3',
+485 silly addNameRange     '3.0.4',
+485 silly addNameRange     '3.0.5',
+485 silly addNameRange     '3.0.6',
+485 silly addNameRange     '3.0.7' ] ]
+486 silly addNamed gulp-util@3.0.7
+487 verbose addNamed "3.0.7" is a plain semver version for gulp-util
+488 silly cache afterAdd gulp-util@3.0.7
+489 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\gulp-util\3.0.7\package\package.json not in flight; writing
+490 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\gulp-util\3.0.7\package\package.json written
+491 silly get cb [ 304, undefined ]
+492 verbose etag https://registry.npmjs.org/v8flags from cache
+493 verbose get saving v8flags to C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\registry.npmjs.org\v8flags\.cache.json
+494 silly addNameRange number 2 { name: 'v8flags', range: '>=2.0.2 <3.0.0', hasData: true }
+495 silly addNameRange versions [ 'v8flags',
+495 silly addNameRange   [ '0.1.0',
+495 silly addNameRange     '0.2.0',
+495 silly addNameRange     '0.3.0',
+495 silly addNameRange     '1.0.0',
+495 silly addNameRange     '1.0.1',
+495 silly addNameRange     '1.0.2',
+495 silly addNameRange     '1.0.3',
+495 silly addNameRange     '1.0.4',
+495 silly addNameRange     '1.0.5',
+495 silly addNameRange     '1.0.6',
+495 silly addNameRange     '1.0.7',
+495 silly addNameRange     '1.0.8',
+495 silly addNameRange     '2.0.0',
+495 silly addNameRange     '2.0.2',
+495 silly addNameRange     '2.0.3',
+495 silly addNameRange     '2.0.4',
+495 silly addNameRange     '2.0.5',
+495 silly addNameRange     '2.0.6',
+495 silly addNameRange     '2.0.7',
+495 silly addNameRange     '2.0.8',
+495 silly addNameRange     '2.0.9',
+495 silly addNameRange     '2.0.10',
+495 silly addNameRange     '2.0.11' ] ]
+496 silly addNamed v8flags@2.0.11
+497 verbose addNamed "2.0.11" is a plain semver version for v8flags
+498 silly cache afterAdd v8flags@2.0.11
+499 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\v8flags\2.0.11\package\package.json not in flight; writing
+500 verbose afterAdd C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\v8flags\2.0.11\package\package.json written
+501 verbose about to build E:\360git\daily_commit\node_modules\gulp
+502 verbose unlock done using C:\Users\zhangxiuhua\AppData\Roaming\npm-cache\_locks\gulp-5b524c2506ca4846.lock for E:\360git\daily_commit\node_modules\gulp
+503 verbose stack Error: read ECONNRESET
+503 verbose stack     at exports._errnoException (util.js:874:11)
+503 verbose stack     at TLSWrap.onread (net.js:544:26)
+504 verbose cwd E:\360git\daily_commit
+505 error Windows_NT 6.1.7601
+506 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gulp"
+507 error node v4.2.3
+508 error npm  v2.14.7
+509 error code ECONNRESET
+510 error errno ECONNRESET
+511 error syscall read
+512 error network read ECONNRESET
+512 error network This is most likely not a problem with npm itself
+512 error network and is related to network connectivity.
+512 error network In most cases you are behind a proxy or have bad network settings.
+512 error network
+512 error network If you are behind a proxy, please make sure that the
+512 error network 'proxy' config is set properly.  See: 'npm help config'
+513 verbose exit [ 1, true ]
+514 verbose unbuild node_modules\gulp
+515 info preuninstall gulp@3.9.1
+516 info uninstall gulp@3.9.1
+517 verbose unbuild rmStuff gulp@3.9.1 from E:\360git\daily_commit\node_modules
+518 silly gentlyRm E:\360git\daily_commit\node_modules\.bin\gulp.cmd is being gently removed
+519 silly gentlyRm verifying E:\360git\daily_commit is an npm working directory
+520 silly gentlyRm containing path E:\360git\daily_commit is under npm's control, in E:\360git\daily_commit
+521 silly gentlyRm deletion target E:\360git\daily_commit\node_modules\.bin\gulp.cmd is under E:\360git\daily_commit
+522 verbose gentlyRm vacuuming from E:\360git\daily_commit\node_modules\.bin\gulp.cmd up to E:\360git\daily_commit
+523 silly gentlyRm E:\360git\daily_commit\node_modules\.bin\gulp is being gently removed
+524 silly gentlyRm verifying E:\360git\daily_commit is an npm working directory
+525 silly gentlyRm containing path E:\360git\daily_commit is under npm's control, in E:\360git\daily_commit
+526 silly gentlyRm deletion target E:\360git\daily_commit\node_modules\.bin\gulp is under E:\360git\daily_commit
+527 verbose gentlyRm vacuuming from E:\360git\daily_commit\node_modules\.bin\gulp up to E:\360git\daily_commit
+528 info postuninstall gulp@3.9.1
+529 silly gentlyRm E:\360git\daily_commit\node_modules\gulp is being purged from base E:\360git\daily_commit
+530 verbose gentlyRm don't care about contents; nuking E:\360git\daily_commit\node_modules\gulp
+531 silly vacuum-fs purging E:\360git\daily_commit\node_modules\gulp
+532 silly vacuum-fs removing E:\360git\daily_commit\node_modules
+533 silly vacuum-fs finished vacuuming up to E:\360git\daily_commit

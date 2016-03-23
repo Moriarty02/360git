@@ -1,0 +1,25 @@
+ //unquote($string)：删除字符串中的引号；
+ //quote($string)：给字符串添加引号。
+ .text1{
+ 	content: unquote("hello");
+ }
+ .text2{
+ 	content: quote(world)
+ }
+ .text3{
+ 	content: to-upper-case(aaaa);
+ }
+ .text4{
+ 	content: to-lower-case(aaaa);
+ 	width: #{ceil(random()*100)}px;
+ }
+ body{
+ 	width: percentage(2px/10px)
+ }
+ //list
+ $list: a b c d;
+ .demo{
+ 	width: length($list);
+ 	color:  #{nth($list,2)}
+ }
+ //introspection 函数

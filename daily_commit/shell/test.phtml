@@ -1,0 +1,420 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<title>性能报告</title>
+	<style type="text/css">
+		@import url('/css/reset.css');
+		@import url('/css/qui.css');
+		@import url('/css/module/testin.css');
+
+	</style>
+	<style type="text/css">
+	body {
+    background-color: #f0f3f4;
+    font-size:12px;
+	width:100%;
+}
+
+.m-recmd {
+    margin: 16px 0 57px;
+   
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.m-apps {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.appItem{
+	position: relative;
+}
+.appItem{
+	position: relative;
+}
+.m-desc{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 15px;
+	color: #323232;
+}
+.app-logo{
+	width: 61px;
+	height: 61px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.app-logo img{
+	max-width: 100%;
+}
+.app-aside p:nth-child(1){
+	font-size: 15px;
+	color: 323232;
+}
+.app-aside p:nth-child(2){
+	font-size: 13px;
+	color: #000;
+	opacity: 0.5;
+}
+.app_ctrl{
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.app_ctrl  a{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	
+	width: 53px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 13px;
+	color: #49cb92;
+	border:1px solid #49cb92;
+	border-radius: 5px;
+}
+      .app-dbtn{
+            position:relative;
+            display:inline-block;
+        }
+        .app-dbtn-pw{
+            position:absolute;
+            display:inline-block;
+            left:0;
+            z-index:1;
+            width:100%;
+            height:100%
+        }
+        .app-dbtn-process{
+            background:#15801C;
+            display:inline-block;
+            position:absolute;
+            left:0;
+            height:100%;
+            border-radius:4px;
+            overflow:hidden;
+        }
+        .app-dbtn-label{
+            position:absolute;
+            left:0;
+            width:100%;
+            z-index:2;
+        }
+
+	</style>
+</head>
+<body class="qui_theme qui_theme-blue qui_theme-night2">
+<?php $data = $this->data['data'];
+	$detail = array(array(
+		 "sid" => 2425070, 
+		 "pname"=>"com.ldfs.express",
+		 "logo_url"=>"http://p19.qhimg.com/t015ab83e8a508ef570.png",
+		 "name"=>"美丽说",
+		 "desc"=>"632",
+		 
+
+		),array(
+		 "sid" => 2615233, 
+		 "pname"=>"com.xhbn.pair",
+		 "logo_url"=>"http://p19.qhimg.com/t01fe13eee32a457286.png",
+		 "name"=>"美丽说",
+		 "desc"=>"632",
+		
+		),array(
+		 "sid" => 1067219, 
+		 "pname"=>"com.qingchifan",
+		 "logo_url"=>"http://p15.qhimg.com/t01daacc18ae8569f15.png",
+		 "name"=>"美丽说",
+		 "desc"=>"632",
+		
+		));
+
+
+?>
+<div class="qui_viewport qui_text-dark">
+	<div class="qui_panel qui_panel-pure">
+		<div class="testin_panel testin_header">
+			<div class="qui_media qui_media-appCard" 
+			    data-sid="{{soft_id}}" data-pname="{{apkid}}" data-size="{{size}}">
+				<div class="qui_media_figure">
+					<img src="<?php echo $this->data['logo_url']; ?>" alt="">
+				</div>
+				<div class="qui_media_detail">
+					<p class="qui_media_name"><?php echo htmlspecialchars($this->data['soft_name']); ?></p>
+					<p>测试评级：<?php echo 2*$data['score']; ?>分</p>
+					<p class="">版本号：<?php echo htmlspecialchars($this->data['ver_name']); ?> 检测时间：<?php echo $data['time']; ?></p>
+					<p class="qui_media_desc">由<a class="js-link testin" href="http://my.testin.cn/?v=360tg">Testin云测试</a>提供专业的真机兼容测试</p>
+				</div>
+				<a href="https://openapi.testin.cn/partner/qualityCenter" class="js-link qui_btn qui_btn-small">查看规则</a>
+			</div>
+		</div>
+
+		<div class="testin_panel">
+			<section>
+				<h3 class="testin_title qui_text-dark">兼容概况</h3>
+
+				<div class="testin_overview">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="140" height="140">
+						<circle cx="70" cy="70" r="66" fill="#fefefe" stroke="#ebebeb" stroke-width="3"></circle>
+					  	<circle cx="70" cy="70" r="38" fill="#fff" stroke="#39c9b4" stroke-width="8" stroke-dasharray="<?php echo $data['pass_rate']*2*38*pi()/100; ?> 20000" transform="rotate(-90, 70, 70)"></circle>
+					  	<circle cx="70" cy="70" r="34" fill="none" stroke="#f4f4f4" stroke-width="1"></circle>
+
+					  	<text x="70" y="75" text-anchor="middle" font-size="18" fill="#39c9b4"><?php echo min(100, $data['pass_rate']); ?><tspan font-size="12">%</tspan></text>
+					  	<text x="70" y="128" text-anchor="middle" fill="#cacaca">通过率</text>
+					</svg>
+					<p class="testin_overview_label">通过机型/完成机型总数</p>
+					<a href="#nogo" class="incompatible js-showPhones"></a>
+				</div>
+			</section>
+			<hr class="qui_divider qui_divider-default">
+
+			<section style="overflow:hidden;">
+				<h3 class="testin_title qui_text-dark">性能概况</h3>
+
+				<div class="horizonBarGroup">
+					<div class="bar bar-blue"><div class="bar_body" style="width:20px;"></div><div class="bar_label">当前应用平均值</div></div>
+
+					<div class="bar bar-pink"><div class="bar_body" style="width:20px;"></div><div class="bar_label">同类应用平均值参考</div></div>
+				</div>
+
+				<?php
+					$app = $data['app'];
+					$industry = $data['industry'];
+					
+					$max_time = max(
+                        $app['install_time'], 
+                        $app['startup_time'], 
+                        $industry['install_time'], 
+                        $industry['startup_time']
+                    ) * 1.5;
+
+                    $max_mem = max(
+                        $app['mem'],$industry['mem']
+                    ) * 1.8;
+
+                    $max_p = max(
+                        $app['cpu'], 
+                        $app['gpu'], 
+                        $industry['cpu'], 
+                        $industry['gpu']
+                    ) * 1.9;
+
+                    $max_flow = max(
+                        $app['flow'],$industry['flow']
+                    ) * 2.5;
+
+
+                    function get_percent($value, $max) {
+                    	// 防止除以0
+                    	if (!$max) {
+                    		$max = 0.000000000001;
+                    		$value = 0;
+                    	}
+                        return $value * 100 / $max;
+                    }
+				?> 
+				<table class="perfTab" cellpadding="0" cellspacing="0">
+					<tr>
+						<th>安装时间</th>
+						<td>
+							<div class="bar bar-blue">
+								<div class="bar_body" style="width:<?php echo get_percent($app['install_time'], $max_time); ?>%;"></div>
+								<div class="bar_label"><?php echo $app['install_time']; ?>s</div>
+							</div>
+
+							<div class="bar bar-pink">
+								<div class="bar_body" style="width:<?php echo get_percent($industry['install_time'], $max_time); ?>%;"></div>
+								<div class="bar_label"><?php echo $industry['install_time']; ?>s</div>
+							</div>
+						</td>
+					</tr>
+					<tr><th>启动时间</th>
+						<td>
+							<div class="bar bar-blue"><div class="bar_body" style="width:<?php echo get_percent($app['startup_time'], $max_time); ?>%;"></div><div class="bar_label"><?php echo $app['startup_time']; ?>s</div></div>
+
+							<div class="bar bar-pink"><div class="bar_body" style="width:<?php echo get_percent($industry['startup_time'], $max_time);?>%;"></div><div class="bar_label"><?php echo $industry['startup_time']; ?>s</div></div>
+						</td>
+					</tr>
+					<tr><th>内存占用</th>
+						<td>
+						<div class="bar bar-blue"><div class="bar_body" style="width:<?php echo get_percent($app['mem'], $max_mem); ?>%;"></div>
+						<div class="bar_label"><?php echo $app['mem']; ?>MB</div></div>
+
+						<div class="bar bar-pink"><div class="bar_body" style="width:<?php echo get_percent($industry['mem'], $max_mem); ?>%;"></div>
+						<div class="bar_label"><?php echo $industry['mem']; ?>MB</div></div>
+						</td>
+					</tr>
+
+                   <tr><th>CPU占用</th>
+						<td>
+						<div class="bar bar-blue"><div class="bar_body" style="width:<?php echo get_percent($app['cpu'], $max_p); ?>%;"></div>
+						<div class="bar_label"><?php echo $app['cpu']; ?>%</div></div>
+
+						<div class="bar bar-pink"><div class="bar_body" style="width:<?php echo get_percent($industry['cpu'], $max_p); ?>%;"></div>
+						<div class="bar_label"><?php echo $industry['cpu']; ?>%</div></div>
+						</td>
+					</tr>
+
+					<tr><th>GPU占用</th>
+						<td>
+						<div class="bar bar-blue"><div class="bar_body" style="width:<?php echo get_percent($app['gpu'], $max_p); ?>%;"></div>
+						<div class="bar_label"><?php echo $app['gpu']; ?>%</div></div>
+
+						<div class="bar bar-pink"><div class="bar_body" style="width:<?php echo get_percent($industry['gpu'], $max_p); ?>%;"></div>
+						<div class="bar_label"><?php echo $industry['gpu']; ?>%</div></div>
+						</td>
+					</tr>
+
+					<tr><th>流量耗用</th>
+						<td>
+						<div class="bar bar-blue"><div class="bar_body" style="width:<?php echo get_percent($app['flow'], $max_flow); ?>%;"></div>
+						<div class="bar_label"><?php echo $app['flow']; ?>KB</div></div>
+
+						<div class="bar bar-pink"><div class="bar_body" style="width:<?php echo get_percent($industry['flow'], $max_flow); ?>%;"></div>
+						<div class="bar_label"><?php echo $industry['flow']; ?>KB</div></div>
+						</td>
+					</tr>
+				</table>
+
+			</section>
+		</div>
+		
+	</div>
+	
+<!--
+	<div class="qui_panel">
+		<div class="testin_title qui_text-dark">行业最优应用推荐</div>
+
+		<div class="testin_apps">
+			<div class="qui_media qui_media-appBox" 
+			    data-sid="{{soft_id}}" data-pname="{{apkid}}" data-size="{{size}}">
+				<div class="qui_media_figure">
+					<img src="http://p18.qhimg.com/dr/160_160_/t01287a9606ad2bf368.png" alt="" data-icon="{{logo_url}}">
+				</div>
+				<div class="qui_media_detail">
+					<p class="qui_media_name qui_text-dark">{{name}}</p>
+					<p class="qui_media_meta">2034人在玩</p>
+					<a href="#nogo" class="qui_btn qui_btn-withPlan js-appHandler" data-status="download">下载</a>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+<!--start-->
+<div class="m-recmd testin_panel">
+<h3 class="testin_title qui_text-dark">行业最优应用推荐</h3>
+        
+        <div class="m-apps">
+        <?php 
+        for($index=0;$index<count($detail);$index++){?>
+        	<div class="appItem app-item" data-pname="<?php echo $detail[$index]["pname"] ?>" data-sid="<?php echo $detail[$index]["sid"] ?>" >
+                <div class="app-logo"><img src="<?php echo $detail[$index]["logo_url"] ?>"></div>
+                <div class="app-aside">
+                    <p><?php echo $detail[$index]["name"] ?></p>
+                    <p><?php echo $detail[$index]["desc"] ?>万人在玩</p>
+                    <div class="app-ctrl  app_ctrl">
+                       <a href="javascript:void(0)" class="app-dbtn btn_download js-app-btn"> <span>下载</span></a>
+                    </div>
+                </div>
+            </div>
+        
+        <?php
+    			}
+        ?>
+        </div>
+    </div>
+
+<!--end-->
+
+</div>
+
+<?php 
+	$newData = $this->data['new_data'] ?: []; 
+	$mobiles = $newData['mobileFaileList'] ?: [];
+?>
+<div class="layer js-layer" style="display:none;">
+	<div class="full mask vacBox">
+		<div class="phoneTab">
+			<div class="phoneTabTitle">
+				不兼容列表
+				<a href="#nogo" class="btn-close js-close">&#10005;</a>
+			</div>
+			<div class="phoneTabBody">
+				<table class="table-1" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<th>手机品牌</th>
+						<th>手机型号</th>
+						<th>系统版本</th>
+					</tr>
+					<?php foreach ($mobiles as $item) { ?>
+					<tr>
+						<td><?php echo htmlspecialchars($item['brandName']); ?></td>
+						<td><?php echo htmlspecialchars($item['modelName']); ?></td>
+						<td>Android <?php echo htmlspecialchars($item['osVersion']); ?></td>
+					</tr>
+					<?php } ?>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="http://s0.qhimg.com/static/cf5b7c03544f8232.js" file="qstore.js"></script>
+<script src="http://s9.qhimg.com/apc/zepto.min/45.js"></script>
+<script src="http://s8.qhimg.com/!451327d6/appstatus.js" ></script>
+<script type="text/javascript">
+	    AppStatusMgr.start({showSmartbar:true});
+		AppStatusMgr.check();	
+
+</script>
+<script>
+	var Dialog = function($container) {
+		this.$container = $container;
+		this.init();
+	};
+	$.extend(Dialog.prototype, {
+		init : function() {
+			var _this = this;
+
+			this.$container.on('click', '.js-close', function(evt){
+				evt.preventDefault();
+				_this.hide();
+			});
+		},
+
+		show : function() {
+			this.$container.show();
+		},
+
+		hide : function() {
+			this.$container.hide();
+		}
+	});
+
+	var App = {
+		init : function() {
+			var _this = this;
+			var dialog = new Dialog($('.js-layer'));
+
+			$('.js-showPhones').on('click', function(evt){
+				dialog.show();
+				evt.preventDefault();
+			});
+		}
+	};
+
+	App.init();
+</script>
+<script src="http://s0.qhimg.com/monitor/;monitor/2edd36ee.js"></script>
+<script>monitor.setProject("shoujizhushou_help").setUrl("htt://openbox.mobilem.360.cn/safe/getTestResult").getTrack().getClickAndKeydown()</script>
+
+</body>
+</html>
