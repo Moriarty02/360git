@@ -1,0 +1,17 @@
+.box{
+	width: 100px;
+	height: 100px;
+}
+@keyframes move{
+	0%{
+		left:0px;
+	}
+	100%{
+		left: 100px;
+	}
+
+
+}
+.d{
+	display: flex;
+}
