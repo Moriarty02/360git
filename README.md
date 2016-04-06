@@ -12,4 +12,7 @@ daily test and work
 - zepto.js
 [https://github.com/Moriarty02/360git/blob/master/template.html](https://github.com/Moriarty02/360git/blob/master/template.html "标准模板")
 
+## 新增 transitionEnd的队列动画 模板
+
+
 

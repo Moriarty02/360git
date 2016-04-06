@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>队列动画测试</title>
+    <script type="text/javascript" src="../js/animationQuene.js"></script>
+    <style type="text/css">
+    .box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: deepskyblue;
+        margin: 10px;
+        -webkit-transition: all 2s;
+    }
+    
+    .box1 {
+        top: 0px;
+        left: 5px;
+    }
+    
+    .box2 {
+        top: 120px;
+        left: 5px;
+    }
+    
+    .box3 {
+        top: 230px;
+        left: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box box2"></div>
+    <div class="box1 box"></div>
+    <div class="box3 box"></div>
+</body>
+<script type="text/javascript">
+var dom = document.querySelector(".box1");
+var dom2 = document.querySelector(".box2");
+var dom3 = document.querySelector(".box3");
+
+transitionEnd(dom).bind(function() {
+	console.log(2); 
+	dom2.style.left = "200px";
+    transitionEnd(dom2).bind(function() {
+         dom3.style.left = "200px";
+        transitionEnd(dom3).bind(function() {
+           
+            console.log("finish");
+        })
+
+    })
+
+});
+
+
+
+dom.addEventListener("click", function() {
+    console.log(1);
+    this.style.left = this.offsetLeft + 100 + "px";
+}, false);
+</script>
+
+</html>
