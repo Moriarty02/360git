@@ -9,7 +9,15 @@
 <body>
 </body>
 <script type="text/javascript">
-console.time("s"); var frag = document.createDocumentFragment(); for (var i = 0, length = 100000; i < length; i++) { var div=d ocument.createElement( "div"); div.innerHTML=i + "s"; frag.appendChild(div); } document.body.appendChild(frag); console.timeEnd( "s");
+console.time("s");
+var frag = document.createDocumentFragment();
+for (var i = 0, length = 100000; i < length; i++) {
+    var div = d ocument.createElement("div");
+    div.innerHTML = i + "s";
+    frag.appendChild(div);
+}
+document.body.appendChild(frag);
+console.timeEnd("s");
 
 console.time("f");
 for (var j = 0, len = 100000; j < len; j++) {

@@ -1,0 +1,29 @@
+<style>
+#block {
+    position: absolute;
+    left: 250px;
+    top: 200px;
+    width: 80px;
+    height: 80px;
+    background: #0c8;
+    line-height: 80px;
+    text-align: center;
+}
+</style>
+<div id="block">click me</div>
+<script>
+block.addEventListener('click', function() {
+    var self = this,
+        startTime = Date.now(),
+        distance = 100,
+        T = 2000;
+
+    requestAnimationFrame(function step() {
+        var p = Math.min(1.0, (Date.now() - startTime) / T);
+        var tx = distance * Math.sin(2 * Math.PI * p);
+
+        self.style.transform = 'translateX(' + tx + 'px)';
+        if (p < 1.0) requestAnimationFrame(step);
+    });
+});
+</script>

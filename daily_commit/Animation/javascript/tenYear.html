@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>动画基础1</title>
+    <style type="text/css">
+    .box {
+        width: 100px;
+        height: 100px;
+        background: #0c8;
+        line-height: 100px;
+        text-align: center;
+        margin: 100px auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        click
+    </div>
+    <script type="text/javascript">
+    var dom = document.querySelector(".box");
+    var deg = 0;
+    dom.addEventListener("click", function(e) {
+        var that = this;
+        console.log(deg);
+        setInterval(function() {
+            that.style.transform = "rotate(" + (deg++) + "deg)";
+
+        },1000/60)
+
+    }, false);
+    </script>
+</body>
+
+</html>

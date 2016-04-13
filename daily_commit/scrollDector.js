@@ -233,7 +233,7 @@ ScrollerDetector.init = function(config) {
         $(els).each(function () {
             var img = $(this).find(imgSelector);
             var icon = img.data(dc.dataName);
-            if (icon) {
+            if (icon) {  
                 img.attr('src', icon);
                 img.removeAttr(attr);
             }
