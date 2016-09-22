@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>img_test</title>
+    <style type="text/css">
+    .loading {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        opacity: .4;
+    }
+    
+    .bar {
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 300px;
+        height: 70px;
+        background: skyblue;
+    }
+    
+    #bar-progress {
+        display: block;
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        background: deepskyblue;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <div class="bar"><span id="bar-progress"></span></div>
+    </div>
+    <div class="wrap">
+        <!--   <img src="http://p0.qhimg.com/d/inn/cc5ba2f6/test/1.jpg">
+      <img src="http://p0.qhimg.com/d/inn/cc5ba2f6/test/2.jpg">
+      <img src="http://p0.qhimg.com/d/inn/cc5ba2f6/test/34.jpg">
+      <img src="http://p0.qhimg.com/d/inn/cc5ba2f6/test/5.jpg"> -->
+    </div>
+    <script type="text/javascript">
+    var base = "http://p0.qhimg.com/d/inn/cc5ba2f6/test/";
+    var img_arr = [1, 2, 34, 5];
+
+
+    //loading start;
+    var process = 0;
+    var total = img_arr.length;
+    var count = 0;
+    var bar = document.getElementById("bar-progress");
+    bar.style.width="0%"
+    img_arr.forEach(function(imgs) {
+        var img = document.createElement("img");
+        img.src = base + imgs + ".jpg";
+
+        img.onload = function() {
+            process = ++count / total;
+            bar.style.width = (process * 100).toFixed(2) + "%";
+            if (process == 1) {
+                //loading end
+                bar.style.width9o = "100%";
+                return
+            }
+        }
+
+    });
+    </script>
+</body>
+
+</html>

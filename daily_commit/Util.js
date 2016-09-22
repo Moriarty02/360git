@@ -134,19 +134,22 @@ var Util = {
             return false;
         }
     }
+   
+   
+
 
 };
 
- function getCookie(c_name) {
+function getCookie(c_name) {
 
-        var name = "";
-        var cookies = document.cookie.split(";");
-        for (var i = 0, len = cookies.length; i < len; i++) {
-            name = decodeURI(cookies[i].split("=")[0]);
-            if (name === c_name) {
-                return decodeURI(cookies[i].split("=")[1]);
-            }
+    var name = "";
+    var cookies = document.cookie.split(";");
+    for (var i = 0, len = cookies.length; i < len; i++) {
+        name = decodeURI(cookies[i].split("=")[0]);
+        if (name === c_name) {
+            return decodeURI(cookies[i].split("=")[1]);
         }
-        return "";
-
     }
+    return "";
+
+}
